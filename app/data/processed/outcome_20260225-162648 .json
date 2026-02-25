@@ -1,0 +1,1172 @@
+[
+  {
+    "id": "b16e6ed9a6fc4afda4cfb02c5987ed67",
+    "original_question": "Legalizar tirulo secundario",
+    "question": "¿Cómo se puede legalizar un título secundario?",
+    "answer": "Para hacer el trámite, necesitás *reservar un turno* en el siguiente enlace: \nhttps://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=1427 \n\nDespués, tenés que presentarte en *Carlos H. Perette 750 (Barrio 31)*, de lunes a viernes de 10 a 16 h, con: \n🔹 Tu *DNI* \n🔹 El *número de trámite* \n🔹 La documentación original con *firmas manuscritas* \n\nEl trámite es *gratuito* y termina con la legalización del título. 🎓",
+    "outcome": {
+      "task": "question_answering",
+      "route": "tramites",
+      "info": "triage: Consulta sobre el trámite de legalización de un título secundario, que es un procedimiento administrativo en CABA. | router: La consulta trata sobre la legalización de un documento oficial, que es un trámite administrativo.",
+      "failures": []
+    },
+    "response_time": 7.7224,
+    "route_to": "",
+    "correlation_id": "7aec6952-78e2-4808-8466-3de2226164c2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Legalizar tirulo secundario"
+      },
+      {
+        "role": "assistant",
+        "content": "Para hacer el trámite, necesitás *reservar un turno* en el siguiente enlace: \nhttps://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=1427 \n\nDespués, tenés que presentarte en *Carlos H. Perette 750 (Barrio 31)*, de lunes a viernes de 10 a 16 h, con: \n🔹 Tu *DNI* \n🔹 El *número de trámite* \n🔹 La documentación original con *firmas manuscritas* \n\nEl trámite es *gratuito* y termina con la legalización del título. 🎓"
+      }
+    ],
+    "node_metadata": {
+      "blocked_list": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.002
+      },
+      "reformulate": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "4:https://foundry-boti-dev-4.cognitiveservices.azure.com/",
+        "tokens": {
+          "input": 799,
+          "output": 16,
+          "total": 815
+        },
+        "timings": 1.3716
+      },
+      "triage": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "7:https://foundry-boti-dev-9.services.ai.azure.com/",
+        "tokens": {
+          "input": 2443,
+          "output": 33,
+          "total": 2476
+        },
+        "timings": 1.7198
+      },
+      "router": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "1:https://foundry-boti-dev-2.cognitiveservices.azure.com/",
+        "tokens": {
+          "input": 1420,
+          "output": 28,
+          "total": 1448
+        },
+        "timings": 1.892
+      },
+      "blocked_list_agent": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0008
+      },
+      "agent_call": {
+        "model": null,
+        "temperature": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "breakdown": {
+          "agent_request": 2.3146,
+          "overhead": 0.0004
+        },
+        "timings": 2.315
+      },
+      "personality": {
+        "model": "gpt-4o",
+        "temperature": 0.2,
+        "endpoint": "0:https://foundry-boti-dev-3.cognitiveservices.azure.com/",
+        "tokens": {
+          "input": 759,
+          "output": 133,
+          "total": 892
+        },
+        "timings": 1.7444
+      },
+      "grounding": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "7:https://foundry-boti-dev-9.services.ai.azure.com/",
+        "tokens": {
+          "input": 1758,
+          "output": 38,
+          "total": 1796
+        },
+        "timings": 1.9117
+      },
+      "join_triage_router": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0
+      },
+      "agent_tramites": {
+        "retrieve": {
+          "model": null,
+          "temperature": null,
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "total": 0
+          },
+          "timing": 0.4997
+        },
+        "retrieve_embeddings": {
+          "model": "text-embedding-3-large",
+          "endpoint": "6:https://foundry-botii-dev-6.services.ai.azure.com/",
+          "tokens": {
+            "prompt_tokens": 12,
+            "total_tokens": 12
+          },
+          "timing": 0.0937
+        },
+        "rag_answer": {
+          "model": "gpt-5-chat",
+          "temperature": 0.2,
+          "endpoint": "8:https://foundry-boti-dev-8.services.ai.azure.com/",
+          "tokens": {
+            "input": 1903,
+            "output": 106,
+            "total": 2009
+          },
+          "timing": 1.7495
+        }
+      },
+      "join_personality_grounding": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0063
+      }
+    },
+    "partial_answers": {
+      "blocked_list": {
+        "blocked": false
+      },
+      "reformulate": {
+        "question": "¿Cómo se puede legalizar un título secundario?"
+      },
+      "triage": {
+        "task": "question_answering",
+        "reason": "Consulta sobre el trámite de legalización de un título secundario, que es un procedimiento administrativo en CABA."
+      },
+      "router": {
+        "route": "tramites",
+        "reason": "La consulta trata sobre la legalización de un documento oficial, que es un trámite administrativo."
+      },
+      "blocked_list_agent": {
+        "blocked": false
+      },
+      "agent_call": {
+        "selected": "tramites",
+        "tools": [
+          {
+            "type": "index",
+            "index_name": "tramites",
+            "index_url": "https://search-shared-dev.search.windows.net"
+          }
+        ],
+        "prompts": {
+          "answer": {
+            "prompt": "## Role\nYou are a precise assistant that answers strictly from SOURCES.\n\n## Task Goal\nGenerate an answer to QUESTION using only SOURCES.\n\n## Task instructions\n- Use only SOURCES to answer QUESTION. Do not use external sources or invent facts.\n- Output must be a plain string (no leading labels like \"ANSWER:\").\n- Conciseness: The answer must be under 80 words and when possible include lists.\n- Time awareness: If QUESTION references time (e.g., \"hoy\", \"mañana\", \"este fin de semana\"), consider the current datetime: {{$datetime}}. Any recommended action must be scheduled strictly after {{$datetime}}.\n- Do not talk about: politics, government, security/insecurity, robbery, income, poor neighborhoods, ugly neighborhoods, or neighborhoods to avoid.\n- Administrative tasks: provide clear, actionable information. Prioritize the most relevant points. If a link appears in SOURCES, include it (prefer buenosaires.gob.ar over argentina.gob.ar). When summarizing or omitting content for brevity, indicate this to the users and end by asking if they want the full details. Always end by asking if they need anything else.\n- Context awareness: If SOURCES mention contacting Boti, WhatsApp, or using the city's chatbot (11 5050 0147), do not include that in the answer.\n\n## Inputs:\nSOURCES: {{$sources}}\nDATETIME: {{$datetime}}\n\n## Output:\nA single concise string answer that follows all rules above.",
+            "model": "gpt-5-chat",
+            "temperature": 0.2
+          },
+          "personality": {
+            "prompt": null,
+            "model": null,
+            "temperature": null
+          }
+        }
+      },
+      "agent_request": {
+        "ok": true,
+        "status": 200,
+        "data": {
+          "answer": "Debés reservar un turno en [este enlace](https://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=1427) y presentarte en Carlos H. Perette 750 (Barrio 31), de lunes a viernes de 10 a 16 h, con tu DNI, número de trámite y la documentación original con firmas manuscritas. El trámite es gratuito y finaliza con la legalización del título. ¿Querés que te detalle los pasos completos?",
+          "context": "TÍTULO:\nSolicitud de legalización de títulos y certificados\n\nDESCRIPCIÓN:\nEs el trámite que debés realizar para presentar documentación en CABA, en relación con títulos, certificados y legalizaciones del Ministerio de Educación.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-de-legalizacion-de-titulos-y-certificados\n\nORGANISMOS:\nOrganismo Responsable \nGerencia Operativa de Títulos y Legalizaciones\nUbicación \n[Carlos H. Perette 750](https://mapa.buenosaires.gob.ar/comollego/?lat=-34.581585&lng=-58.380468&zl=15&modo=transporte&dir=Ministerio+de+Educaci%C3%B3n+GCBA+(CABA)) - Barrio 31\nDías de atención \nLunes a viernes\nHorarios de atención \n10 a 16 hs\n\nREQUISITOS:\n- • DNI.\n\n• Número de trámite.\n\n• La documentación a legalizar y las firmas deben ser originales (no se legalizan copias ni firmas digitalizadas).\n\nPASOS:\nRESERVÁ UN TURNO:\n[Obtené un turno](https://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=1427) y dirigite a [Carlos H. Perette 750 (Barrio 31)](https://mapa.buenosaires.gob.ar/comollego/?lat=-34.582393&lng=-58.378878&zl=15&modo=transporte&dir=Perette%2C+Carlos+H.+y+Calle+10+(No+Oficial)).\n\n• Las personas que se presenten serán atendidas, como máximo, desde 10 minutos antes y hasta 30 minutos posteriores al mismo.\n\nFINALIZÁ EL TRÁMITE:\nEl trámite finaliza con la Legalización de los títulos y certificados presentados.\n\nCOSTO:\n- : $0.00\n\nMÁS INFORMACIÓN:\n- Para asesoramiento sobre este trámite, podés acercarte a cualquier Sede Comunal con turno previo. Solicitalo [acá](https://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=7407) o llamá al 147.\nRecordá que, si te desuscribiste de los mails del Gobierno de la Ciudad, no podrás recibir el mail de confirmación de citas, por lo que deberás comunicarte con el 147 para indicar un correo alternativo.\n\nSEDES:\n\n---\n\nTÍTULO:\nGestión Privada - Certificación de Documentación de Estudiantes de Instituto de Nivel Secundario y Superior Activo\n\nDESCRIPCIÓN:\nEste trámite permite solicitar a los/as estudiantes de institutos de nivel secundario y nivel superior de Gestión Privada que se encuentran activos, la certificación de la validez de los documentos necesarios, exclusivamente para ser presentados ante organismos o instituciones con jurisdicción en la Ciudad de Buenos Aires.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/gestion-privada-certificacion-de-documentacion-de-estudiantes-de-instituto-de-nivel\n\nORGANISMOS:\nOrganismo Responsable \nMinisterio de Educación\nUbicación \n[Carlos H. Perette 750 - Barrio 31](https://mapa.buenosaires.gob.ar/comollego/?lat=-34.581573&lng=-58.380459&zl=15&modo=transporte&dir=Ministerio+de+Educaci%C3%B3n+GCBA+(CABA))\nDías de atención \nLunes a viernes\nHorarios de atención \n9 a 16 hs\n\nREQUISITOS:\n- • \nContar con usuario y clave miBA nivel 1. \n\nSi tenés alguna duda sobre cómo crear tu cuenta o validar tu identidad, ingresá a Plataforma miBA.\n\nConocé más sobre los niveles de seguridad de clave miBA.\n\n- Documentación Obligatoria\n\n• Formulario: certificación de documentación de alumno de instituto activo (completar).\n\n• Documentos a certificar (un archivo en formato JPG o PDF por documento).\n\n• Una vez finalizado el trámite, recibirás un correo electrónico con la notificación de que el/los certificados se encuentran disponibles para ser descargados, dentro de la plataforma de Tramitación a Distancia (TAD).\n\nPASOS:\nINGRESÁ A TAD:\n• Hacé clic en “Iniciar trámite”.\n\n• Accedé al Sistema de Tramitación a Distancia (TAD) con tu usuario y contraseña miBA.\n\nGENERÁ TU EXPEDIENTE:\n• Seguí las indicaciones de la plataforma.\n\n• Cargá la información solicitada para iniciar tu trámite.\n\nCOSTO:\n- : $0.00\n\nMÁS INFORMACIÓN:\n- ¿Qué documentos pueden ser solicitados para su certificación?\n\n• Certificado de carga horaria total del plan de estudios.\n\n• Plan de estudios de nivel secundario o nivel superior, cursado total o parcialmente.\n\n• Programas de las asignaturas cursadas.\n\n• Constancia de título en trámite.\n\n• Constancia de analítico en trámite.\n\nSEDES:\n\n---\n\nTÍTULO:\nSolicitud de nuevo ejemplar de título secundario o terciario (y analíticos pre 2008)\n\nDESCRIPCIÓN:\nDebés realizar este trámite para solicitar una copia de tu título secundario o terciario (y analíticos pre 2008) de escuelas e intitutos de la Ciudad Autónoma de Buenos Aires.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-de-nuevo-ejemplar-de-titulo-secundario-o-terciario-y-analiticos\n\nORGANISMOS:\nOrganismo Responsable\nMinisterio de Educación\n\nREQUISITOS:\n- • DNI.\n\nImportante: este trámite sólo pueden realizarlo aquellas personas que ya tenían en su posesión su título y/o analítico, y requieren un nuevo ejemplar por pérdida y/o deterioro.\n\nPASOS:\nINICIÁ EL TRÁMITE:\n• Hacé clic en \"Iniciar trámite\".\n\n• Ingresá a la plataforma BA Colaborativa con tu usuario y contraseña miBA.\n\nAVANZÁ CON TU SOLICITUD:\n• Seguí las indicaciones de la plataforma.\n\n• Completá el formulario y cargá tu DNI.\n\nFINALIZÁ EL TRÁMITE:\nRecibirás el título y/o analítico solicitado.\n\nCOSTO:\n- : $0.00\n\nMÁS INFORMACIÓN:\n- Más Información\nEn caso de necesitar indicaciones, podés acceder al siguiente [tutorial](https://youtu.be/raJ8JnRFulY) con el paso a paso de cómo realizar el trámite. \nPara asesoramiento sobre este trámite, podés acercarte a cualquier Sede Comunal con turno previo. Solicitalo [acá](https://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=7407) o llamá al 147.\nRecordá que si te desuscribiste de los mails del GCBA no podrás recibir el mail de confirmación de citas, por lo que deberás comunicarte con el 147 para indicar un correo alternativo\n\nSEDES:",
+          "partial_answers": {
+            "retrieve": "TÍTULO:\nSolicitud de legalización de títulos y certificados\n\nDESCRIPCIÓN:\nEs el trámite que debés realizar para presentar documentación en CABA, en relación con títulos, certificados y legalizaciones del Ministerio de Educación.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-de-legalizacion-de-titulos-y-certificados\n\nORGANISMOS:\nOrganismo Responsable \nGerencia Operativa de Títulos y Legalizaciones\nUbicación \n[Carlos H. Perette 750](https://mapa.buenosaires.gob.ar/comollego/?lat=-34.581585&lng=-58.380468&zl=15&modo=transporte&dir=Ministerio+de+Educaci%C3%B3n+GCBA+(CABA)) - Barrio 31\nDías de atención \nLunes a viernes\nHorarios de atención \n10 a 16 hs\n\nREQUISITOS:\n- • DNI.\n\n• Número de trámite.\n\n• La documentación a legalizar y las firmas deben ser originales (no se legalizan copias ni firmas digitalizadas).\n\nPASOS:\nRESERVÁ UN TURNO:\n[Obtené un turno](https://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=1427) y dirigite a [Carlos H. Perette 750 (Barrio 31)](https://mapa.buenosaires.gob.ar/comollego/?lat=-34.582393&lng=-58.378878&zl=15&modo=transporte&dir=Perette%2C+Carlos+H.+y+Calle+10+(No+Oficial)).\n\n• Las personas que se presenten serán atendidas, como máximo, desde 10 minutos antes y hasta 30 minutos posteriores al mismo.\n\nFINALIZÁ EL TRÁMITE:\nEl trámite finaliza con la Legalización de los títulos y certificados presentados.\n\nCOSTO:\n- : $0.00\n\nMÁS INFORMACIÓN:\n- Para asesoramiento sobre este trámite, podés acercarte a cualquier Sede Comunal con turno previo. Solicitalo [acá](https://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=7407) o llamá al 147.\nRecordá que, si te desuscribiste de los mails del Gobierno de la Ciudad, no podrás recibir el mail de confirmación de citas, por lo que deberás comunicarte con el 147 para indicar un correo alternativo.\n\nSEDES:\n\n---\n\nTÍTULO:\nGestión Privada - Certificación de Documentación de Estudiantes de Instituto de Nivel Secundario y Superior Activo\n\nDESCRIPCIÓN:\nEste trámite permite solicitar a los/as estudiantes de institutos de nivel secundario y nivel superior de Gestión Privada que se encuentran activos, la certificación de la validez de los documentos necesarios, exclusivamente para ser presentados ante organismos o instituciones con jurisdicción en la Ciudad de Buenos Aires.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/gestion-privada-certificacion-de-documentacion-de-estudiantes-de-instituto-de-nivel\n\nORGANISMOS:\nOrganismo Responsable \nMinisterio de Educación\nUbicación \n[Carlos H. Perette 750 - Barrio 31](https://mapa.buenosaires.gob.ar/comollego/?lat=-34.581573&lng=-58.380459&zl=15&modo=transporte&dir=Ministerio+de+Educaci%C3%B3n+GCBA+(CABA))\nDías de atención \nLunes a viernes\nHorarios de atención \n9 a 16 hs\n\nREQUISITOS:\n- • \nContar con usuario y clave miBA nivel 1. \n\nSi tenés alguna duda sobre cómo crear tu cuenta o validar tu identidad, ingresá a Plataforma miBA.\n\nConocé más sobre los niveles de seguridad de clave miBA.\n\n- Documentación Obligatoria\n\n• Formulario: certificación de documentación de alumno de instituto activo (completar).\n\n• Documentos a certificar (un archivo en formato JPG o PDF por documento).\n\n• Una vez finalizado el trámite, recibirás un correo electrónico con la notificación de que el/los certificados se encuentran disponibles para ser descargados, dentro de la plataforma de Tramitación a Distancia (TAD).\n\nPASOS:\nINGRESÁ A TAD:\n• Hacé clic en “Iniciar trámite”.\n\n• Accedé al Sistema de Tramitación a Distancia (TAD) con tu usuario y contraseña miBA.\n\nGENERÁ TU EXPEDIENTE:\n• Seguí las indicaciones de la plataforma.\n\n• Cargá la información solicitada para iniciar tu trámite.\n\nCOSTO:\n- : $0.00\n\nMÁS INFORMACIÓN:\n- ¿Qué documentos pueden ser solicitados para su certificación?\n\n• Certificado de carga horaria total del plan de estudios.\n\n• Plan de estudios de nivel secundario o nivel superior, cursado total o parcialmente.\n\n• Programas de las asignaturas cursadas.\n\n• Constancia de título en trámite.\n\n• Constancia de analítico en trámite.\n\nSEDES:\n\n---\n\nTÍTULO:\nSolicitud de nuevo ejemplar de título secundario o terciario (y analíticos pre 2008)\n\nDESCRIPCIÓN:\nDebés realizar este trámite para solicitar una copia de tu título secundario o terciario (y analíticos pre 2008) de escuelas e intitutos de la Ciudad Autónoma de Buenos Aires.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-de-nuevo-ejemplar-de-titulo-secundario-o-terciario-y-analiticos\n\nORGANISMOS:\nOrganismo Responsable\nMinisterio de Educación\n\nREQUISITOS:\n- • DNI.\n\nImportante: este trámite sólo pueden realizarlo aquellas personas que ya tenían en su posesión su título y/o analítico, y requieren un nuevo ejemplar por pérdida y/o deterioro.\n\nPASOS:\nINICIÁ EL TRÁMITE:\n• Hacé clic en \"Iniciar trámite\".\n\n• Ingresá a la plataforma BA Colaborativa con tu usuario y contraseña miBA.\n\nAVANZÁ CON TU SOLICITUD:\n• Seguí las indicaciones de la plataforma.\n\n• Completá el formulario y cargá tu DNI.\n\nFINALIZÁ EL TRÁMITE:\nRecibirás el título y/o analítico solicitado.\n\nCOSTO:\n- : $0.00\n\nMÁS INFORMACIÓN:\n- Más Información\nEn caso de necesitar indicaciones, podés acceder al siguiente [tutorial](https://youtu.be/raJ8JnRFulY) con el paso a paso de cómo realizar el trámite. \nPara asesoramiento sobre este trámite, podés acercarte a cualquier Sede Comunal con turno previo. Solicitalo [acá](https://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=7407) o llamá al 147.\nRecordá que si te desuscribiste de los mails del GCBA no podrás recibir el mail de confirmación de citas, por lo que deberás comunicarte con el 147 para indicar un correo alternativo\n\nSEDES:",
+            "rag_answer": "Debés reservar un turno en [este enlace](https://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=1427) y presentarte en Carlos H. Perette 750 (Barrio 31), de lunes a viernes de 10 a 16 h, con tu DNI, número de trámite y la documentación original con firmas manuscritas. El trámite es gratuito y finaliza con la legalización del título. ¿Querés que te detalle los pasos completos?"
+          },
+          "correlation_id": "3fb18c4f045b4a7e8efc2e5e10fa83ed"
+        }
+      },
+      "personality": "Para hacer el trámite, necesitás *reservar un turno* en el siguiente enlace: \nhttps://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=1427 \n\nDespués, tenés que presentarte en *Carlos H. Perette 750 (Barrio 31)*, de lunes a viernes de 10 a 16 h, con: \n🔹 Tu *DNI* \n🔹 El *número de trámite* \n🔹 La documentación original con *firmas manuscritas* \n\nEl trámite es *gratuito* y termina con la legalización del título. 🎓",
+      "grounding": {
+        "is_grounded": true,
+        "reason": "The response is directly based on the provided context, accurately summarizing the steps and requirements for the legalización de títulos y certificados trámite."
+      },
+      "join_personality_grounding": {
+        "blocked_final_answer": false
+      }
+    }
+  },
+  {
+    "id": "5cf5060bfc7746a0a065a84f56f0575f",
+    "original_question": "Turno para dni",
+    "question": "¿Cómo puedo obtener un turno para realizar trámites relacionados con el DNI?",
+    "answer": "Acá podés reservar turno online según el trámite que necesites:\n\n🔹 *DNI por Carta de Ciudadanía*: https://www.buenosaires.gob.ar/tramites/dni-carta-de-ciudadania \n🔹 *Oficina de trámites accesibles* (diversidad cognitiva/TEA): https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=5305 \n🔹 *Canje de Libreta de Enrolamiento o Cívica*: https://www.buenosaires.gob.ar/tramites/dni-canje-de-libreta-de-enrolamiento-o-civica \n\nSi querés, avisame y te paso info sobre sedes y horarios disponibles. 😊",
+    "outcome": {
+      "task": "question_answering",
+      "route": "tramites",
+      "info": "triage: Consulta sobre la obtención de turnos para trámites relacionados con el DNI, lo cual es un trámite administrativo del GCBA. | router: La consulta se refiere a la obtención de un turno para realizar trámites relacionados con el DNI.",
+      "failures": []
+    },
+    "response_time": 9.5147,
+    "route_to": "",
+    "correlation_id": "fadaf26c-b755-4148-a28f-97004129c1f0",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Turno para dni"
+      },
+      {
+        "role": "assistant",
+        "content": "Acá podés reservar turno online según el trámite que necesites:\n\n🔹 *DNI por Carta de Ciudadanía*: https://www.buenosaires.gob.ar/tramites/dni-carta-de-ciudadania \n🔹 *Oficina de trámites accesibles* (diversidad cognitiva/TEA): https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=5305 \n🔹 *Canje de Libreta de Enrolamiento o Cívica*: https://www.buenosaires.gob.ar/tramites/dni-canje-de-libreta-de-enrolamiento-o-civica \n\nSi querés, avisame y te paso info sobre sedes y horarios disponibles. 😊"
+      }
+    ],
+    "node_metadata": {
+      "blocked_list": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0017
+      },
+      "reformulate": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "2:https://foundry-boti-dev.cognitiveservices.azure.com/",
+        "tokens": {
+          "input": 797,
+          "output": 20,
+          "total": 817
+        },
+        "timings": 1.0501
+      },
+      "triage": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "9:https://foundry-boti-dev-7.services.ai.azure.com/",
+        "tokens": {
+          "input": 2447,
+          "output": 37,
+          "total": 2484
+        },
+        "timings": 2.405
+      },
+      "router": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "6:https://foundry-botii-dev-6.services.ai.azure.com/",
+        "tokens": {
+          "input": 1424,
+          "output": 30,
+          "total": 1454
+        },
+        "timings": 1.2827
+      },
+      "blocked_list_agent": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0006
+      },
+      "agent_call": {
+        "model": null,
+        "temperature": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "breakdown": {
+          "agent_request": 3.1093,
+          "overhead": 0.0004
+        },
+        "timings": 3.1097
+      },
+      "personality": {
+        "model": "gpt-4o",
+        "temperature": 0.2,
+        "endpoint": "0:https://foundry-boti-dev-3.cognitiveservices.azure.com/",
+        "tokens": {
+          "input": 814,
+          "output": 160,
+          "total": 974
+        },
+        "timings": 2.5068
+      },
+      "grounding": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "4:https://foundry-boti-dev-4.cognitiveservices.azure.com/",
+        "tokens": {
+          "input": 2605,
+          "output": 31,
+          "total": 2636
+        },
+        "timings": 2.8704
+      },
+      "join_triage_router": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0
+      },
+      "agent_tramites": {
+        "retrieve": {
+          "model": null,
+          "temperature": null,
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "total": 0
+          },
+          "timing": 0.3862
+        },
+        "retrieve_embeddings": {
+          "model": "text-embedding-3-large",
+          "endpoint": "0:https://foundry-boti-dev-3.cognitiveservices.azure.com/",
+          "tokens": {
+            "prompt_tokens": 18,
+            "total_tokens": 18
+          },
+          "timing": 0.0788
+        },
+        "rag_answer": {
+          "model": "gpt-5-chat",
+          "temperature": 0.2,
+          "endpoint": "2:https://foundry-boti-dev.cognitiveservices.azure.com/",
+          "tokens": {
+            "input": 2699,
+            "output": 161,
+            "total": 2860
+          },
+          "timing": 2.6615
+        }
+      },
+      "join_personality_grounding": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0064
+      }
+    },
+    "partial_answers": {
+      "blocked_list": {
+        "blocked": false
+      },
+      "reformulate": {
+        "question": "¿Cómo puedo obtener un turno para realizar trámites relacionados con el DNI?"
+      },
+      "triage": {
+        "task": "question_answering",
+        "reason": "Consulta sobre la obtención de turnos para trámites relacionados con el DNI, lo cual es un trámite administrativo del GCBA."
+      },
+      "router": {
+        "route": "tramites",
+        "reason": "La consulta se refiere a la obtención de un turno para realizar trámites relacionados con el DNI."
+      },
+      "blocked_list_agent": {
+        "blocked": false
+      },
+      "agent_call": {
+        "selected": "tramites",
+        "tools": [
+          {
+            "type": "index",
+            "index_name": "tramites",
+            "index_url": "https://search-shared-dev.search.windows.net"
+          }
+        ],
+        "prompts": {
+          "answer": {
+            "prompt": "## Role\nYou are a precise assistant that answers strictly from SOURCES.\n\n## Task Goal\nGenerate an answer to QUESTION using only SOURCES.\n\n## Task instructions\n- Use only SOURCES to answer QUESTION. Do not use external sources or invent facts.\n- Output must be a plain string (no leading labels like \"ANSWER:\").\n- Conciseness: The answer must be under 80 words and when possible include lists.\n- Time awareness: If QUESTION references time (e.g., \"hoy\", \"mañana\", \"este fin de semana\"), consider the current datetime: {{$datetime}}. Any recommended action must be scheduled strictly after {{$datetime}}.\n- Do not talk about: politics, government, security/insecurity, robbery, income, poor neighborhoods, ugly neighborhoods, or neighborhoods to avoid.\n- Administrative tasks: provide clear, actionable information. Prioritize the most relevant points. If a link appears in SOURCES, include it (prefer buenosaires.gob.ar over argentina.gob.ar). When summarizing or omitting content for brevity, indicate this to the users and end by asking if they want the full details. Always end by asking if they need anything else.\n- Context awareness: If SOURCES mention contacting Boti, WhatsApp, or using the city's chatbot (11 5050 0147), do not include that in the answer.\n\n## Inputs:\nSOURCES: {{$sources}}\nDATETIME: {{$datetime}}\n\n## Output:\nA single concise string answer that follows all rules above.",
+            "model": "gpt-5-chat",
+            "temperature": 0.2
+          },
+          "personality": {
+            "prompt": null,
+            "model": null,
+            "temperature": null
+          }
+        }
+      },
+      "agent_request": {
+        "ok": true,
+        "status": 200,
+        "data": {
+          "answer": "Podés reservar tu turno online según el trámite que necesites:  \n- DNI por Carta de Ciudadanía: [turno aquí](https://www.buenosaires.gob.ar/tramites/dni-carta-de-ciudadania)  \n- Oficina de trámites accesibles (diversidad cognitiva/TEA): [turno aquí](https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=5305)  \n- Canje de Libreta de Enrolamiento o Cívica: [turno aquí](https://www.buenosaires.gob.ar/tramites/dni-canje-de-libreta-de-enrolamiento-o-civica)  \n¿Querés que te detalle sedes y horarios disponibles?",
+          "context": "TÍTULO:\nDNI - Carta de Ciudadanía\n\nDESCRIPCIÓN:\nEl trámite permite obtener el DNI mediante la Carta de Ciudadanía argentina, otorgada por un juez federal.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/dni-carta-de-ciudadania\n\nORGANISMOS:\nOrganismo Responsable\nDirección General Registro del Estado Civil y Capacidad de las Personas\nUbicación \nUruguay 753\nDías de atención \nLunes a viernes \nHorarios de atención \n7.30 a 19 h\n\nREQUISITOS:\n- • Para realizar el trámite debés tener domicilio en la Ciudad Autónoma de Buenos Aires.\n\n• Carta de Ciudadanía.\n\n• DNI extranjero del solicitante si lo tuviera o denuncia policial.\n\n(I) Si es menor debe asistir acompañado por padre, madre o tutor con DNI o información sumaria.\n\nPASOS:\nRESERVÁ EL TURNO:\n\n\nOBTENÉ TU DNI:\nEl DNI emitido por el [Registro Nacional de las Personas (RENAPER)](https://www.argentina.gob.ar/interior/registro-nacional-de-las-personas) será enviado por correo al domicilio declarado por el ciudadano, quien lo recibirá con el comprobante de trámite. También puede hacerlo una persona mayor de edad con documento y comprobante del trámite. De no recibirlo, deberá concurrir al [Centro de Documentación Rápida](https://www.buenosaires.gob.ar/registrocivil/sedes/centros-de-documentacion-rapida) donde se realizó el DNI, presentando comprobante de trámite. Es importante que antes de asistir al CDR, solicites un turno previo llamando a la línea 147.\nPara más información sobre el retiro de tu DNI/ Pasaporte, ingresá [acá](https://buenosaires.gob.ar/tramites/retiro-de-dni-y-pasaporte).\n\nCOSTO:\n- DNI: $7500.00\n\nMÁS INFORMACIÓN:\nSEDES:\n- Sede Central - Registro Civil (Lunes a viernes - 7.30 a 19 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-central-registro-civil\n\n- Centro de Documentación Rápida (CDR) 10 (Lunes a viernes - 7.30 a 12.50 hs / 13.30 a 18.50 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/centro-de-documentacion-rapida-cdr-10\n\n- Subsede Comunal 3 (Lunes a viernes - 9.30 a 15 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/subsede-comunal-3\n\n- Subsede Comunal 7 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/subsede-comunal-7\n\n- Sede Comunal 5 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-5\n\n- Sede Comunal 8 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-8\n\n- Sede Comunal 12 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-12\n\n- Sede Comunal 13 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-13\n\n- Sede Comunal 15 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-15\n\n\n---\n\nTÍTULO:\nOficina de trámites accesibles personas con diversidad cognitiva y autismo (TEA/CEA)\n\nDESCRIPCIÓN:\nNone\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/oficina-de-tramites-accesibles-personas-con-diversidad-cognitiva-y-autismo-teacea\n\nORGANISMOS:\nOrganismo Responsable\nDirección General Registro del Estado Civil y Capacidad de las Personas\nUbicación \n[Uruguay 753](https://mapa.buenosaires.gob.ar/comollego/?lat=-34.599865&lng=-58.386044&zl=18&modo=transporte&dir=Uruguay+Av.+753)\nDías de atención \nLunes a viernes \nHorarios de atención \n7.30 a 19 h\n\nREQUISITOS:\nPASOS:\nRESERVÁ EL TURNO:\nReservá el turno para realizar el trámite [aquí](https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=5305).\n\nAVANZÁ CON EL TRÁMITE:\nPresentate en la sede donde solicitaste turno, en el día y horario elegido.\n\nCOSTO:\n- Hasta ejemplar C: $7500.00\n\n- Desde ejemplar D: $7500.00\n\n- DNI Argentinos Exprés: $18500.00\n\n- Pasaporte - Primer ejemplar: $70000.00\n\n- Pasaporte - Nuevo ejemplar: $70000.00\n\n- Pasaporte Exprés: $150000.00\n\n- DNI Extranjeros: $14000.00\n\n- DNI Extranjeros Exprés: $25000.00\n\nMÁS INFORMACIÓN:\n- A fin de facilitar los tiempos de gestión del trámite, te recomendamos completar el siguiente formulario haciendo [click acá](https://docs.google.com/forms/d/e/1FAIpQLScAfT1AobwcQUwlY5mYebsD-CNLPNrtwf7NezDEWhPEli16RQ/viewform). Esto ayudará al operador a tener la documentación preparada en la oficina previamente a la cita.  \nSi vas a acompañar a una persona con diversidad cognitiva y autismo a realizar cualquier trámite de DNI y/o pasaporte, te recomendamos algunos pasos que pueden ayudarte a que el trámite sea más fácil para él o ella:\n\n• Paso a paso del trámite.\n\n• Recomendaciones e información para las familias.\n\n• Apoyo visual para anticipar el trámite de DNI/Pasaporte para personas con diversidad cognitiva y TEA/CEA.\n\nSEDES:\n\n---\n\nTÍTULO:\nDNI – Canje de Libreta de Enrolamiento o Cívica\n\nDESCRIPCIÓN:\nEl trámite se realiza para reemplazar la Libreta de enrolamiento o Libreta cívica por el DNI. \r\nTené en cuenta que, para salir del país, solo es válido el DNI tarjeta.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/dni-canje-de-libreta-de-enrolamiento-o-civica\n\nORGANISMOS:\nOrganismo Responsable \nDirección General Registro del Estado Civil y Capacidad de las Personas\nUbicación \nUruguay 753\nDías de atención \nLunes a viernes\nHorarios de atención \n7.30 a 19 h\n\nREQUISITOS:\n- • Libreta de Enrolamiento o Libreta Cívica, si la tuviera (la misma no se retiene).\n\n• Domicilio en la Ciudad Autónoma de Buenos Aires.\n\nPASOS:\nRESERVÁ EL TURNO:\n\n\nOBTENÉ TU DNI:\nEl DNI emitido por el [Registro Nacional de las Personas (RENAPER)](https://www.argentina.gob.ar/interior/registro-nacional-de-las-personas) será enviado por correo al domicilio declarado por el ciudadano, quien lo recibirá con el comprobante de trámite. También puede hacerlo una persona mayor de edad con documento y comprobante del trámite realizado. De no recibirlo, deberá concurrir al [Centro de Documentación Rápida](https://www.buenosaires.gob.ar/registrocivil/sedes/centros-de-documentacion-rapida) donde se realizó el DNI, con comprobante del trámite realizado. Es importante que antes de asistir al CDR, solicites un turno previo llamando a la línea 147.\nPara más información sobre el retiro de tu DNI/ Pasaporte, ingresá [acá](https://buenosaires.gob.ar/tramites/retiro-de-dni-y-pasaporte).\n\nCOSTO:\n- DNI: $7500.00\n\nMÁS INFORMACIÓN:\nSEDES:\n- Sede Central - Registro Civil (Lunes a viernes - 7.30 a 19 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-central-registro-civil\n\n- Subsede Comunal 3 (Lunes a viernes - 9.30 a 15 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/subsede-comunal-3\n\n- Sede Comunal 5 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-5\n\n- Subsede Comunal 7 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/subsede-comunal-7\n\n- Sede Comunal 8 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-8\n\n- Centro de Documentación Rápida (CDR) 10 (Lunes a viernes - 7.30 a 12.50 hs / 13.30 a 18.50 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/centro-de-documentacion-rapida-cdr-10\n\n- Sede Comunal 12 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-12\n\n- Sede Comunal 13 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-13\n\n- Sede Comunal 15 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-15\n",
+          "partial_answers": {
+            "retrieve": "TÍTULO:\nDNI - Carta de Ciudadanía\n\nDESCRIPCIÓN:\nEl trámite permite obtener el DNI mediante la Carta de Ciudadanía argentina, otorgada por un juez federal.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/dni-carta-de-ciudadania\n\nORGANISMOS:\nOrganismo Responsable\nDirección General Registro del Estado Civil y Capacidad de las Personas\nUbicación \nUruguay 753\nDías de atención \nLunes a viernes \nHorarios de atención \n7.30 a 19 h\n\nREQUISITOS:\n- • Para realizar el trámite debés tener domicilio en la Ciudad Autónoma de Buenos Aires.\n\n• Carta de Ciudadanía.\n\n• DNI extranjero del solicitante si lo tuviera o denuncia policial.\n\n(I) Si es menor debe asistir acompañado por padre, madre o tutor con DNI o información sumaria.\n\nPASOS:\nRESERVÁ EL TURNO:\n\n\nOBTENÉ TU DNI:\nEl DNI emitido por el [Registro Nacional de las Personas (RENAPER)](https://www.argentina.gob.ar/interior/registro-nacional-de-las-personas) será enviado por correo al domicilio declarado por el ciudadano, quien lo recibirá con el comprobante de trámite. También puede hacerlo una persona mayor de edad con documento y comprobante del trámite. De no recibirlo, deberá concurrir al [Centro de Documentación Rápida](https://www.buenosaires.gob.ar/registrocivil/sedes/centros-de-documentacion-rapida) donde se realizó el DNI, presentando comprobante de trámite. Es importante que antes de asistir al CDR, solicites un turno previo llamando a la línea 147.\nPara más información sobre el retiro de tu DNI/ Pasaporte, ingresá [acá](https://buenosaires.gob.ar/tramites/retiro-de-dni-y-pasaporte).\n\nCOSTO:\n- DNI: $7500.00\n\nMÁS INFORMACIÓN:\nSEDES:\n- Sede Central - Registro Civil (Lunes a viernes - 7.30 a 19 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-central-registro-civil\n\n- Centro de Documentación Rápida (CDR) 10 (Lunes a viernes - 7.30 a 12.50 hs / 13.30 a 18.50 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/centro-de-documentacion-rapida-cdr-10\n\n- Subsede Comunal 3 (Lunes a viernes - 9.30 a 15 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/subsede-comunal-3\n\n- Subsede Comunal 7 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/subsede-comunal-7\n\n- Sede Comunal 5 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-5\n\n- Sede Comunal 8 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-8\n\n- Sede Comunal 12 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-12\n\n- Sede Comunal 13 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-13\n\n- Sede Comunal 15 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-15\n\n\n---\n\nTÍTULO:\nOficina de trámites accesibles personas con diversidad cognitiva y autismo (TEA/CEA)\n\nDESCRIPCIÓN:\nNone\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/oficina-de-tramites-accesibles-personas-con-diversidad-cognitiva-y-autismo-teacea\n\nORGANISMOS:\nOrganismo Responsable\nDirección General Registro del Estado Civil y Capacidad de las Personas\nUbicación \n[Uruguay 753](https://mapa.buenosaires.gob.ar/comollego/?lat=-34.599865&lng=-58.386044&zl=18&modo=transporte&dir=Uruguay+Av.+753)\nDías de atención \nLunes a viernes \nHorarios de atención \n7.30 a 19 h\n\nREQUISITOS:\nPASOS:\nRESERVÁ EL TURNO:\nReservá el turno para realizar el trámite [aquí](https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=5305).\n\nAVANZÁ CON EL TRÁMITE:\nPresentate en la sede donde solicitaste turno, en el día y horario elegido.\n\nCOSTO:\n- Hasta ejemplar C: $7500.00\n\n- Desde ejemplar D: $7500.00\n\n- DNI Argentinos Exprés: $18500.00\n\n- Pasaporte - Primer ejemplar: $70000.00\n\n- Pasaporte - Nuevo ejemplar: $70000.00\n\n- Pasaporte Exprés: $150000.00\n\n- DNI Extranjeros: $14000.00\n\n- DNI Extranjeros Exprés: $25000.00\n\nMÁS INFORMACIÓN:\n- A fin de facilitar los tiempos de gestión del trámite, te recomendamos completar el siguiente formulario haciendo [click acá](https://docs.google.com/forms/d/e/1FAIpQLScAfT1AobwcQUwlY5mYebsD-CNLPNrtwf7NezDEWhPEli16RQ/viewform). Esto ayudará al operador a tener la documentación preparada en la oficina previamente a la cita.  \nSi vas a acompañar a una persona con diversidad cognitiva y autismo a realizar cualquier trámite de DNI y/o pasaporte, te recomendamos algunos pasos que pueden ayudarte a que el trámite sea más fácil para él o ella:\n\n• Paso a paso del trámite.\n\n• Recomendaciones e información para las familias.\n\n• Apoyo visual para anticipar el trámite de DNI/Pasaporte para personas con diversidad cognitiva y TEA/CEA.\n\nSEDES:\n\n---\n\nTÍTULO:\nDNI – Canje de Libreta de Enrolamiento o Cívica\n\nDESCRIPCIÓN:\nEl trámite se realiza para reemplazar la Libreta de enrolamiento o Libreta cívica por el DNI. \r\nTené en cuenta que, para salir del país, solo es válido el DNI tarjeta.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/dni-canje-de-libreta-de-enrolamiento-o-civica\n\nORGANISMOS:\nOrganismo Responsable \nDirección General Registro del Estado Civil y Capacidad de las Personas\nUbicación \nUruguay 753\nDías de atención \nLunes a viernes\nHorarios de atención \n7.30 a 19 h\n\nREQUISITOS:\n- • Libreta de Enrolamiento o Libreta Cívica, si la tuviera (la misma no se retiene).\n\n• Domicilio en la Ciudad Autónoma de Buenos Aires.\n\nPASOS:\nRESERVÁ EL TURNO:\n\n\nOBTENÉ TU DNI:\nEl DNI emitido por el [Registro Nacional de las Personas (RENAPER)](https://www.argentina.gob.ar/interior/registro-nacional-de-las-personas) será enviado por correo al domicilio declarado por el ciudadano, quien lo recibirá con el comprobante de trámite. También puede hacerlo una persona mayor de edad con documento y comprobante del trámite realizado. De no recibirlo, deberá concurrir al [Centro de Documentación Rápida](https://www.buenosaires.gob.ar/registrocivil/sedes/centros-de-documentacion-rapida) donde se realizó el DNI, con comprobante del trámite realizado. Es importante que antes de asistir al CDR, solicites un turno previo llamando a la línea 147.\nPara más información sobre el retiro de tu DNI/ Pasaporte, ingresá [acá](https://buenosaires.gob.ar/tramites/retiro-de-dni-y-pasaporte).\n\nCOSTO:\n- DNI: $7500.00\n\nMÁS INFORMACIÓN:\nSEDES:\n- Sede Central - Registro Civil (Lunes a viernes - 7.30 a 19 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-central-registro-civil\n\n- Subsede Comunal 3 (Lunes a viernes - 9.30 a 15 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/subsede-comunal-3\n\n- Sede Comunal 5 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-5\n\n- Subsede Comunal 7 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/subsede-comunal-7\n\n- Sede Comunal 8 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-8\n\n- Centro de Documentación Rápida (CDR) 10 (Lunes a viernes - 7.30 a 12.50 hs / 13.30 a 18.50 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/centro-de-documentacion-rapida-cdr-10\n\n- Sede Comunal 12 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-12\n\n- Sede Comunal 13 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-13\n\n- Sede Comunal 15 (Lunes a viernes - 8.30 a 14 hs)\n  http://static.buenosaires.gob.ar/gcaba_historico/sedes/sede-comunal-15\n",
+            "rag_answer": "Podés reservar tu turno online según el trámite que necesites:  \n- DNI por Carta de Ciudadanía: [turno aquí](https://www.buenosaires.gob.ar/tramites/dni-carta-de-ciudadania)  \n- Oficina de trámites accesibles (diversidad cognitiva/TEA): [turno aquí](https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=5305)  \n- Canje de Libreta de Enrolamiento o Cívica: [turno aquí](https://www.buenosaires.gob.ar/tramites/dni-canje-de-libreta-de-enrolamiento-o-civica)  \n¿Querés que te detalle sedes y horarios disponibles?"
+          },
+          "correlation_id": "5326fdeb2fdc47d1a2596b8859ed3302"
+        }
+      },
+      "personality": "Acá podés reservar turno online según el trámite que necesites:\n\n🔹 *DNI por Carta de Ciudadanía*: https://www.buenosaires.gob.ar/tramites/dni-carta-de-ciudadania \n🔹 *Oficina de trámites accesibles* (diversidad cognitiva/TEA): https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=5305 \n🔹 *Canje de Libreta de Enrolamiento o Cívica*: https://www.buenosaires.gob.ar/tramites/dni-canje-de-libreta-de-enrolamiento-o-civica \n\nSi querés, avisame y te paso info sobre sedes y horarios disponibles. 😊",
+      "grounding": {
+        "is_grounded": true,
+        "reason": "The response is directly based on the provided context, summarizing and linking to the relevant information accurately."
+      },
+      "join_personality_grounding": {
+        "blocked_final_answer": false
+      }
+    }
+  },
+  {
+    "id": "4d8c69eeb2fa4054a3e92eb95d609406",
+    "original_question": "trámite renovación nicho chacarita",
+    "question": "¿Cómo se realiza el trámite de renovación de nicho en Chacarita?",
+    "answer": "Para renovar el arrendamiento de un nicho, primero necesitás *reservar un turno* en el sistema de turnos del Gobierno de la Ciudad (usuario miBA). Después, generás el expediente con la info requerida y te presentás en *Av. Guzmán 730, Piso 1*, de lunes a viernes de 8 a 13 h. 🕐\n\nRequisitos: \n🔹 Ser arrendatario y titular del sepulcro \n🔹 Cobrar la jubilación mínima \n🔹 Presentar DNI, vínculo con el fallecido y último recibo de haberes \n\nMás info: https://static.buenosaires.gob.ar/gcaba_historico/tramites/renovacion-de-arrendamiento-de-nicho",
+    "outcome": {
+      "task": "question_answering",
+      "route": "tramites",
+      "info": "triage: Consulta sobre un trámite específico relacionado con la renovación de nichos en el Cementerio de Chacarita, dentro del alcance de trámites del GCBA. | router: Consulta sobre el trámite de renovación de nicho en el Cementerio de Chacarita.",
+      "failures": []
+    },
+    "response_time": 8.8931,
+    "route_to": "",
+    "correlation_id": "ac87f7a4-8d8c-4c9c-931e-47b0e38d26b3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "trámite renovación nicho chacarita"
+      },
+      {
+        "role": "assistant",
+        "content": "Para renovar el arrendamiento de un nicho, primero necesitás *reservar un turno* en el sistema de turnos del Gobierno de la Ciudad (usuario miBA). Después, generás el expediente con la info requerida y te presentás en *Av. Guzmán 730, Piso 1*, de lunes a viernes de 8 a 13 h. 🕐\n\nRequisitos: \n🔹 Ser arrendatario y titular del sepulcro \n🔹 Cobrar la jubilación mínima \n🔹 Presentar DNI, vínculo con el fallecido y último recibo de haberes \n\nMás info: https://static.buenosaires.gob.ar/gcaba_historico/tramites/renovacion-de-arrendamiento-de-nicho"
+      }
+    ],
+    "node_metadata": {
+      "blocked_list": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0029
+      },
+      "reformulate": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "6:https://foundry-botii-dev-6.services.ai.azure.com/",
+        "tokens": {
+          "input": 801,
+          "output": 21,
+          "total": 822
+        },
+        "timings": 0.8308
+      },
+      "triage": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "6:https://foundry-botii-dev-6.services.ai.azure.com/",
+        "tokens": {
+          "input": 2448,
+          "output": 42,
+          "total": 2490
+        },
+        "timings": 1.5949
+      },
+      "router": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "6:https://foundry-botii-dev-6.services.ai.azure.com/",
+        "tokens": {
+          "input": 1425,
+          "output": 28,
+          "total": 1453
+        },
+        "timings": 0.7759
+      },
+      "blocked_list_agent": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0006
+      },
+      "agent_call": {
+        "model": null,
+        "temperature": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "breakdown": {
+          "agent_request": 4.2411,
+          "overhead": 0.0003
+        },
+        "timings": 4.2414
+      },
+      "personality": {
+        "model": "gpt-4o",
+        "temperature": 0.2,
+        "endpoint": "0:https://foundry-boti-dev-3.cognitiveservices.azure.com/",
+        "tokens": {
+          "input": 805,
+          "output": 158,
+          "total": 963
+        },
+        "timings": 2.1069
+      },
+      "grounding": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "2:https://foundry-boti-dev.cognitiveservices.azure.com/",
+        "tokens": {
+          "input": 2597,
+          "output": 32,
+          "total": 2629
+        },
+        "timings": 1.6368
+      },
+      "join_triage_router": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0
+      },
+      "agent_tramites": {
+        "retrieve": {
+          "model": null,
+          "temperature": null,
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "total": 0
+          },
+          "timing": 0.5513
+        },
+        "retrieve_embeddings": {
+          "model": "text-embedding-3-large",
+          "endpoint": "7:https://foundry-boti-dev-9.services.ai.azure.com/",
+          "tokens": {
+            "prompt_tokens": 20,
+            "total_tokens": 20
+          },
+          "timing": 0.077
+        },
+        "rag_answer": {
+          "model": "gpt-5-chat",
+          "temperature": 0.2,
+          "endpoint": "8:https://foundry-boti-dev-8.services.ai.azure.com/",
+          "tokens": {
+            "input": 2701,
+            "output": 152,
+            "total": 2853
+          },
+          "timing": 3.63
+        }
+      },
+      "join_personality_grounding": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0115
+      }
+    },
+    "partial_answers": {
+      "blocked_list": {
+        "blocked": false
+      },
+      "reformulate": {
+        "question": "¿Cómo se realiza el trámite de renovación de nicho en Chacarita?"
+      },
+      "triage": {
+        "task": "question_answering",
+        "reason": "Consulta sobre un trámite específico relacionado con la renovación de nichos en el Cementerio de Chacarita, dentro del alcance de trámites del GCBA."
+      },
+      "router": {
+        "route": "tramites",
+        "reason": "Consulta sobre el trámite de renovación de nicho en el Cementerio de Chacarita."
+      },
+      "blocked_list_agent": {
+        "blocked": false
+      },
+      "agent_call": {
+        "selected": "tramites",
+        "tools": [
+          {
+            "type": "index",
+            "index_name": "tramites",
+            "index_url": "https://search-shared-dev.search.windows.net"
+          }
+        ],
+        "prompts": {
+          "answer": {
+            "prompt": "## Role\nYou are a precise assistant that answers strictly from SOURCES.\n\n## Task Goal\nGenerate an answer to QUESTION using only SOURCES.\n\n## Task instructions\n- Use only SOURCES to answer QUESTION. Do not use external sources or invent facts.\n- Output must be a plain string (no leading labels like \"ANSWER:\").\n- Conciseness: The answer must be under 80 words and when possible include lists.\n- Time awareness: If QUESTION references time (e.g., \"hoy\", \"mañana\", \"este fin de semana\"), consider the current datetime: {{$datetime}}. Any recommended action must be scheduled strictly after {{$datetime}}.\n- Do not talk about: politics, government, security/insecurity, robbery, income, poor neighborhoods, ugly neighborhoods, or neighborhoods to avoid.\n- Administrative tasks: provide clear, actionable information. Prioritize the most relevant points. If a link appears in SOURCES, include it (prefer buenosaires.gob.ar over argentina.gob.ar). When summarizing or omitting content for brevity, indicate this to the users and end by asking if they want the full details. Always end by asking if they need anything else.\n- Context awareness: If SOURCES mention contacting Boti, WhatsApp, or using the city's chatbot (11 5050 0147), do not include that in the answer.\n\n## Inputs:\nSOURCES: {{$sources}}\nDATETIME: {{$datetime}}\n\n## Output:\nA single concise string answer that follows all rules above.",
+            "model": "gpt-5-chat",
+            "temperature": 0.2
+          },
+          "personality": {
+            "prompt": null,
+            "model": null,
+            "temperature": null
+          }
+        }
+      },
+      "agent_request": {
+        "ok": true,
+        "status": 200,
+        "data": {
+          "answer": "Debés reservar turno en el sistema de turnos del Gobierno de la Ciudad (usuario miBA), generar el expediente cargando la información solicitada y presentarte en Av. Guzmán 730, Piso 1, de lunes a viernes de 8 a 13 h. Requisitos: ser arrendatario y titular del sepulcro, cobrar la jubilación mínima, presentar DNI, vínculo con el fallecido y último recibo de haberes. Más info: [Renovación de Arrendamiento de Nicho](http://static.buenosaires.gob.ar/gcaba_historico/tramites/renovacion-de-arrendamiento-de-nicho). ¿Querés que te detalle los costos según la fila?",
+          "context": "TÍTULO:\nRenovación de Arrendamiento de Nicho\n\nDESCRIPCIÓN:\nEs el trámite que debés realizar para renovar un arrendamiento de nicho.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/renovacion-de-arrendamiento-de-nicho\n\nORGANISMOS:\nOrganismo Responsable\nDirección General de Cementerios\nUbicación \n[Guzmán 730, Piso 1](https://mapa.buenosaires.gob.ar/comollego/?lat=-34.587270&lng=-58.455718&zl=15&modo=transporte&dir=Guzman+Av.+730) \nDías de atención \nLunes a viernes \nHorarios de atención\n8 a 13 hs\n\nREQUISITOS:\n- • Cobrar la jubilación mínima.\n\n• Adjuntar último recibo de haberes.\n\n• Ser arrendatario.\n\n• Ser el titular del sepulcro a renovar.\n\n• DNI de la persona solicitante y justificar vínculo con el fallecido.\n\nPASOS:\nRESERVÁ TU CITA PARA REALIZAR EL TRÁMITE:\n• Hacé clic en “Iniciar trámite”.\n\n• Accedé al Sistema de turnos del Gobierno de la Ciudad con tu usuario y contraseña miBA.\n\nGENERÁ TU EXPEDIENTE:\n• Seguí las indicaciones de la plataforma.\n\n• Cargá la información solicitada para iniciar tu trámite.\n\nRecordá: las imágenes deben ser legibles para poder proceder con el trámite.\n\nPRESENTATE A TU TURNO:\nPresentate en:[ Av. Guzmán 730](https://mapa.buenosaires.gob.ar/informacion/?lat=-34.587256&lng=-58.455698&zl=15&modo=transporte&dir=Guzman+Av.+730&ilat=-34.587270&ilng=-58.455718), Piso 1 según te corresponda. \r\nRecordá respetar el horario del turno asignado.\n\nFINALIZÁ TU TRÁMITE:\nLa confirmación de trámite efectuado exitosamente te llegará por mail.\n\nCOSTO:\n- Arrendamiento de Nichos para Ataudes (Chacarita - Flores) - Fila 1: $29260.00\n\n- Arrendamiento de Nichos para Ataudes (Chacarita - Flores) - Filas 2 y 3: $63560.00\n\n- Arrendamiento de Nichos para Ataudes (Chacarita - Flores) - Fila 4: $27040.00\n\n- Arrendamiento de Nichos para Ataudes (Chacarita - Flores) - Fila 5: $26110.00\n\n- Arrendamiento de Nichos para Ataudes (Chacarita - Flores) - Fila 6: $21300.00\n\n- Arrendamiento de Nichos para Ataudes (Recoleta) - Filas 1 a 3: $204110.00\n\n- Arrendamiento de Nichos para Ataudes (Recoleta) - Fila 4: $115220.00\n\n- Arrendamiento de Nichos para Ataudes (Recoleta) - Fila 5: $109870.00\n\n- Arrendamiento de Nichos para Ataudes (Recoleta) - Fila 6: $65480.00\n\n- Nichos categoría única Recoleta: $73350.00\n\n- Nichos para urnas de uno o dos restos (Chacarita - Flores) - Filas 1 y 2: $15320.00\n\n- Nichos para urnas de uno o dos restos (Chacarita - Flores) - Filas 3 a 5: $22880.00\n\n- Nichos para urnas de uno o dos restos (Chacarita - Flores) - Fila 6 en adelante: $11540.00\n\n- Nichos para urnas de varios restos (Chacarita - Flores) - Fila 1: $15640.00\n\n- Nichos para urnas de varios restos (Chacarita - Flores) - Filas 2 y 3: $28860.00\n\n- Nichos para urnas de varios restos (Chacarita - Flores) - Fila 4: $19100.00\n\n- Nichos para urnas de varios restos (Chacarita - Flores) - Fila 5 en adelante: $15320.00\n\n- Nichos para urnas de con Cenizas (Chacarita - Flores) - Filas 1 a 4: $11540.00\n\n- Nichos para urnas de con Cenizas (Chacarita - Flores) - Filas 5 a 9: $15640.00\n\n- Nichos para urnas de con Cenizas (Chacarita - Flores) - Fila 10 en adelante: $7450.00\n\nMÁS INFORMACIÓN:\nSEDES:\n\n---\n\nTÍTULO:\nRenovación de concesión - Panteones\n\nDESCRIPCIÓN:\nTenés que realizar este trámite si necesitás renovar la concesión de un panteón de cementerios del Gobierno de la Ciudad.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/renovacion-de-concesion-panteones\n\nORGANISMOS:\nOrganismo Responsable\nDirección General de Cementerios\nUbicación \n[Guzmán 730, Piso 1](https://mapa.buenosaires.gob.ar/mapas/comollego/?lat=-34.587270&lng=-58.455718&zl=15&modo=transporte&dir=Guzman+Av.+730)[ ](https://mapa.buenosaires.gob.ar/mapas/comollego/?lat=-34.587270&lng=-58.455718&zl=15&modo=transporte&dir=Guzman+Av.+730)\nDías de atención \nLunes a viernes \nHorarios de atención\n8 a 13 hs\n\nREQUISITOS:\n- • Estatutos sociales.\n\n• Tasa de la bóveda paga.\n\nPASOS:\nENVIÁ LA DOCUMENTACIÓN:\nDigitalizá la documentación original a exhibir.\r\nEnviala a [dgcementerios@buenosaires.gob.ar](mailto:dgcementerios@buenosaires.gob.ar), con asunto \"Notarial\".\n\nRESERVÁ TU CITA PARA REALIZAR EL TRÁMITE:\n• Hacé clic en “Iniciar trámite”.\n\n• Accedé al Sistema de turnos del Gobierno de la Ciudad con tu usuario y contraseña miBA.\n\nPRESENTATE A TU TURNO:\nPresentate en: [Av. Guzmán 730](https://mapa.buenosaires.gob.ar/informacion/?lat=-34.587256&lng=-58.455698&zl=15&modo=transporte&dir=Guzman+Av.+730&ilat=-34.587270&ilng=-58.455718), Piso 1, según te corresponda. \r\nRecordá respetar el horario del turno asignado.\n\nRETIRÁ EL NUEVO TÍTULO:\nUna vez concluida la gestión, solicitá el turno para retirarlo. \nAccedé al [sistema de turnos del Gobierno de la Ciudad](https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3269) con tu usuario y contraseña miBA.\r\nPresentate en: [Av. Guzmán 730](https://mapa.buenosaires.gob.ar/informacion/?lat=-34.587256&lng=-58.455698&zl=15&modo=transporte&dir=Guzman+Av.+730&ilat=-34.587270&ilng=-58.455718), Piso 1, según te corresponda.\n\nCOSTO:\n- Valor Expresado por m2/1 año: Cementerio de la Recoleta: $43240.00\n\n- Valor Expresado por m2/1 año: Cementerios Chacarita y Flores - Categoría 1: $19410.00\n\n- Valor Expresado por m2/1 año: Cementerios Chacarita y Flores - Categoría 2: $17320.00\n\n- Valor Expresado por m2/1 año: Cementerios Chacarita y Flores - Categoría 3: $15220.00\n\nMÁS INFORMACIÓN:\nSEDES:\n\n---\n\nTÍTULO:\nRenovación de concesión de terreno para bóveda\n\nDESCRIPCIÓN:\nEs el trámite que tenés que realizar si necesitás renovar la concesión de un terreno para bóveda en alguno de los cementerios del Gobierno de la Ciudad.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/renovacion-de-concesion-de-terreno-para-boveda\n\nORGANISMOS:\nOrganismo Responsable\nDirección General de Cementerios\nUbicación \n[Guzmán 730, Piso 1](#) \nDías de atención \nLunes a viernes \nHorarios de atención\n8 a 13 hs\n\nREQUISITOS:\n- • \nPoder original o autorización con firma certificada por escribano.\n\n• \nPartidas emitidas por el Registro Civil de la jurisdicción pertinente.\r\n\tPara acreditar su carácter de heredero o legatario del titular o su vínculo de parentesco con el titular de la bóveda\n\nPASOS:\nENVIÁ LA DOCUMENTACIÓN:\n• Digitalizá la documentación original a exhibir.\n\n• Enviala a dgcementerios@buenosaires.gob.ar, con asunto \"Notarial\".\n\nRESERVÁ TU CITA PARA REALIZAR EL TRÁMITE:\n• Hacé clic en “Iniciar trámite”.\n\n• Accedé al Sistema de turnos del Gobierno de la Ciudad con tu usuario y contraseña miBA.\n\nPRESENTATE A TU TURNO:\n• Presentate en: Av. Guzmán 730, Piso 1, según te corresponda. \n\n• Recordá respetar el horario del turno asignado.\n\nRETIRÁ EL NUEVO TÍTULO:\n• Una vez concluida la gestión, solicitá el turno para retirarlo. \n\n• Accedé al sistema de turnos del Gobierno de la Ciudad con tu usuario y contraseña miBA.\n\nCOSTO:\n- Valor Expresado por m2/1 año: Cementerio de la Recoleta: $43240.00\n\n- Valor Expresado por m2/1 año: Cementerios Chacarita y Flores - Categoría 1: $19410.00\n\n- Valor Expresado por m2/1 año: Cementerios Chacarita y Flores - Categoría 2: $17320.00\n\n- Valor Expresado por m2/1 año: Cementerios Chacarita y Flores - Categoría 3: $15220.00\n\nMÁS INFORMACIÓN:\nSEDES:",
+          "partial_answers": {
+            "retrieve": "TÍTULO:\nRenovación de Arrendamiento de Nicho\n\nDESCRIPCIÓN:\nEs el trámite que debés realizar para renovar un arrendamiento de nicho.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/renovacion-de-arrendamiento-de-nicho\n\nORGANISMOS:\nOrganismo Responsable\nDirección General de Cementerios\nUbicación \n[Guzmán 730, Piso 1](https://mapa.buenosaires.gob.ar/comollego/?lat=-34.587270&lng=-58.455718&zl=15&modo=transporte&dir=Guzman+Av.+730) \nDías de atención \nLunes a viernes \nHorarios de atención\n8 a 13 hs\n\nREQUISITOS:\n- • Cobrar la jubilación mínima.\n\n• Adjuntar último recibo de haberes.\n\n• Ser arrendatario.\n\n• Ser el titular del sepulcro a renovar.\n\n• DNI de la persona solicitante y justificar vínculo con el fallecido.\n\nPASOS:\nRESERVÁ TU CITA PARA REALIZAR EL TRÁMITE:\n• Hacé clic en “Iniciar trámite”.\n\n• Accedé al Sistema de turnos del Gobierno de la Ciudad con tu usuario y contraseña miBA.\n\nGENERÁ TU EXPEDIENTE:\n• Seguí las indicaciones de la plataforma.\n\n• Cargá la información solicitada para iniciar tu trámite.\n\nRecordá: las imágenes deben ser legibles para poder proceder con el trámite.\n\nPRESENTATE A TU TURNO:\nPresentate en:[ Av. Guzmán 730](https://mapa.buenosaires.gob.ar/informacion/?lat=-34.587256&lng=-58.455698&zl=15&modo=transporte&dir=Guzman+Av.+730&ilat=-34.587270&ilng=-58.455718), Piso 1 según te corresponda. \r\nRecordá respetar el horario del turno asignado.\n\nFINALIZÁ TU TRÁMITE:\nLa confirmación de trámite efectuado exitosamente te llegará por mail.\n\nCOSTO:\n- Arrendamiento de Nichos para Ataudes (Chacarita - Flores) - Fila 1: $29260.00\n\n- Arrendamiento de Nichos para Ataudes (Chacarita - Flores) - Filas 2 y 3: $63560.00\n\n- Arrendamiento de Nichos para Ataudes (Chacarita - Flores) - Fila 4: $27040.00\n\n- Arrendamiento de Nichos para Ataudes (Chacarita - Flores) - Fila 5: $26110.00\n\n- Arrendamiento de Nichos para Ataudes (Chacarita - Flores) - Fila 6: $21300.00\n\n- Arrendamiento de Nichos para Ataudes (Recoleta) - Filas 1 a 3: $204110.00\n\n- Arrendamiento de Nichos para Ataudes (Recoleta) - Fila 4: $115220.00\n\n- Arrendamiento de Nichos para Ataudes (Recoleta) - Fila 5: $109870.00\n\n- Arrendamiento de Nichos para Ataudes (Recoleta) - Fila 6: $65480.00\n\n- Nichos categoría única Recoleta: $73350.00\n\n- Nichos para urnas de uno o dos restos (Chacarita - Flores) - Filas 1 y 2: $15320.00\n\n- Nichos para urnas de uno o dos restos (Chacarita - Flores) - Filas 3 a 5: $22880.00\n\n- Nichos para urnas de uno o dos restos (Chacarita - Flores) - Fila 6 en adelante: $11540.00\n\n- Nichos para urnas de varios restos (Chacarita - Flores) - Fila 1: $15640.00\n\n- Nichos para urnas de varios restos (Chacarita - Flores) - Filas 2 y 3: $28860.00\n\n- Nichos para urnas de varios restos (Chacarita - Flores) - Fila 4: $19100.00\n\n- Nichos para urnas de varios restos (Chacarita - Flores) - Fila 5 en adelante: $15320.00\n\n- Nichos para urnas de con Cenizas (Chacarita - Flores) - Filas 1 a 4: $11540.00\n\n- Nichos para urnas de con Cenizas (Chacarita - Flores) - Filas 5 a 9: $15640.00\n\n- Nichos para urnas de con Cenizas (Chacarita - Flores) - Fila 10 en adelante: $7450.00\n\nMÁS INFORMACIÓN:\nSEDES:\n\n---\n\nTÍTULO:\nRenovación de concesión - Panteones\n\nDESCRIPCIÓN:\nTenés que realizar este trámite si necesitás renovar la concesión de un panteón de cementerios del Gobierno de la Ciudad.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/renovacion-de-concesion-panteones\n\nORGANISMOS:\nOrganismo Responsable\nDirección General de Cementerios\nUbicación \n[Guzmán 730, Piso 1](https://mapa.buenosaires.gob.ar/mapas/comollego/?lat=-34.587270&lng=-58.455718&zl=15&modo=transporte&dir=Guzman+Av.+730)[ ](https://mapa.buenosaires.gob.ar/mapas/comollego/?lat=-34.587270&lng=-58.455718&zl=15&modo=transporte&dir=Guzman+Av.+730)\nDías de atención \nLunes a viernes \nHorarios de atención\n8 a 13 hs\n\nREQUISITOS:\n- • Estatutos sociales.\n\n• Tasa de la bóveda paga.\n\nPASOS:\nENVIÁ LA DOCUMENTACIÓN:\nDigitalizá la documentación original a exhibir.\r\nEnviala a [dgcementerios@buenosaires.gob.ar](mailto:dgcementerios@buenosaires.gob.ar), con asunto \"Notarial\".\n\nRESERVÁ TU CITA PARA REALIZAR EL TRÁMITE:\n• Hacé clic en “Iniciar trámite”.\n\n• Accedé al Sistema de turnos del Gobierno de la Ciudad con tu usuario y contraseña miBA.\n\nPRESENTATE A TU TURNO:\nPresentate en: [Av. Guzmán 730](https://mapa.buenosaires.gob.ar/informacion/?lat=-34.587256&lng=-58.455698&zl=15&modo=transporte&dir=Guzman+Av.+730&ilat=-34.587270&ilng=-58.455718), Piso 1, según te corresponda. \r\nRecordá respetar el horario del turno asignado.\n\nRETIRÁ EL NUEVO TÍTULO:\nUna vez concluida la gestión, solicitá el turno para retirarlo. \nAccedé al [sistema de turnos del Gobierno de la Ciudad](https://formulario-sigeci.buenosaires.gob.ar/InicioTramiteComun?idPrestacion=3269) con tu usuario y contraseña miBA.\r\nPresentate en: [Av. Guzmán 730](https://mapa.buenosaires.gob.ar/informacion/?lat=-34.587256&lng=-58.455698&zl=15&modo=transporte&dir=Guzman+Av.+730&ilat=-34.587270&ilng=-58.455718), Piso 1, según te corresponda.\n\nCOSTO:\n- Valor Expresado por m2/1 año: Cementerio de la Recoleta: $43240.00\n\n- Valor Expresado por m2/1 año: Cementerios Chacarita y Flores - Categoría 1: $19410.00\n\n- Valor Expresado por m2/1 año: Cementerios Chacarita y Flores - Categoría 2: $17320.00\n\n- Valor Expresado por m2/1 año: Cementerios Chacarita y Flores - Categoría 3: $15220.00\n\nMÁS INFORMACIÓN:\nSEDES:\n\n---\n\nTÍTULO:\nRenovación de concesión de terreno para bóveda\n\nDESCRIPCIÓN:\nEs el trámite que tenés que realizar si necesitás renovar la concesión de un terreno para bóveda en alguno de los cementerios del Gobierno de la Ciudad.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/renovacion-de-concesion-de-terreno-para-boveda\n\nORGANISMOS:\nOrganismo Responsable\nDirección General de Cementerios\nUbicación \n[Guzmán 730, Piso 1](#) \nDías de atención \nLunes a viernes \nHorarios de atención\n8 a 13 hs\n\nREQUISITOS:\n- • \nPoder original o autorización con firma certificada por escribano.\n\n• \nPartidas emitidas por el Registro Civil de la jurisdicción pertinente.\r\n\tPara acreditar su carácter de heredero o legatario del titular o su vínculo de parentesco con el titular de la bóveda\n\nPASOS:\nENVIÁ LA DOCUMENTACIÓN:\n• Digitalizá la documentación original a exhibir.\n\n• Enviala a dgcementerios@buenosaires.gob.ar, con asunto \"Notarial\".\n\nRESERVÁ TU CITA PARA REALIZAR EL TRÁMITE:\n• Hacé clic en “Iniciar trámite”.\n\n• Accedé al Sistema de turnos del Gobierno de la Ciudad con tu usuario y contraseña miBA.\n\nPRESENTATE A TU TURNO:\n• Presentate en: Av. Guzmán 730, Piso 1, según te corresponda. \n\n• Recordá respetar el horario del turno asignado.\n\nRETIRÁ EL NUEVO TÍTULO:\n• Una vez concluida la gestión, solicitá el turno para retirarlo. \n\n• Accedé al sistema de turnos del Gobierno de la Ciudad con tu usuario y contraseña miBA.\n\nCOSTO:\n- Valor Expresado por m2/1 año: Cementerio de la Recoleta: $43240.00\n\n- Valor Expresado por m2/1 año: Cementerios Chacarita y Flores - Categoría 1: $19410.00\n\n- Valor Expresado por m2/1 año: Cementerios Chacarita y Flores - Categoría 2: $17320.00\n\n- Valor Expresado por m2/1 año: Cementerios Chacarita y Flores - Categoría 3: $15220.00\n\nMÁS INFORMACIÓN:\nSEDES:",
+            "rag_answer": "Debés reservar turno en el sistema de turnos del Gobierno de la Ciudad (usuario miBA), generar el expediente cargando la información solicitada y presentarte en Av. Guzmán 730, Piso 1, de lunes a viernes de 8 a 13 h. Requisitos: ser arrendatario y titular del sepulcro, cobrar la jubilación mínima, presentar DNI, vínculo con el fallecido y último recibo de haberes. Más info: [Renovación de Arrendamiento de Nicho](http://static.buenosaires.gob.ar/gcaba_historico/tramites/renovacion-de-arrendamiento-de-nicho). ¿Querés que te detalle los costos según la fila?"
+          },
+          "correlation_id": "603e9e096da642c680f5725aa984b071"
+        }
+      },
+      "personality": "Para renovar el arrendamiento de un nicho, primero necesitás *reservar un turno* en el sistema de turnos del Gobierno de la Ciudad (usuario miBA). Después, generás el expediente con la info requerida y te presentás en *Av. Guzmán 730, Piso 1*, de lunes a viernes de 8 a 13 h. 🕐\n\nRequisitos: \n🔹 Ser arrendatario y titular del sepulcro \n🔹 Cobrar la jubilación mínima \n🔹 Presentar DNI, vínculo con el fallecido y último recibo de haberes \n\nMás info: https://static.buenosaires.gob.ar/gcaba_historico/tramites/renovacion-de-arrendamiento-de-nicho",
+      "grounding": {
+        "is_grounded": true,
+        "reason": "The response is directly based on the provided context, summarizing the process and requirements for the specified procedure."
+      },
+      "join_personality_grounding": {
+        "blocked_final_answer": false
+      }
+    }
+  },
+  {
+    "id": "65238e2fb0a1428a890a50fc271bc9db",
+    "original_question": "copia acta de casamineto de mis padres",
+    "question": "¿Cómo puedo obtener una copia del acta de matrimonio de mis padres?",
+    "answer": "Si querés pedir una partida de matrimonio en la Ciudad, podés hacerlo por el trámite *“Solicitud de Partidas”* en TAD. Acá te dejo el link: https://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-partidas 📄\n\nPara hacerlo, *necesitás*:\n🔹 Usuario miBA.\n🔹 Datos completos de los titulares.\n🔹 Fecha aproximada del matrimonio.\n\nEl costo es $0 si tenés los datos exactos, o $9760 si no los tenés.",
+    "outcome": {
+      "task": "question_answering",
+      "route": "tramites",
+      "info": "triage: Consulta sobre el trámite para obtener una copia de un acta de matrimonio, lo cual es un procedimiento administrativo del GCBA. | router: La consulta se refiere a la obtención de una copia de un documento oficial, lo cual es un trámite administrativo.",
+      "failures": []
+    },
+    "response_time": 13.3786,
+    "route_to": "",
+    "correlation_id": "f8c3e329-1ac6-4a00-9b71-c52b71cc337a",
+    "messages": [
+      {
+        "role": "user",
+        "content": "copia acta de casamineto de mis padres"
+      },
+      {
+        "role": "assistant",
+        "content": "Si querés pedir una partida de matrimonio en la Ciudad, podés hacerlo por el trámite *“Solicitud de Partidas”* en TAD. Acá te dejo el link: https://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-partidas 📄\n\nPara hacerlo, *necesitás*:\n🔹 Usuario miBA.\n🔹 Datos completos de los titulares.\n🔹 Fecha aproximada del matrimonio.\n\nEl costo es $0 si tenés los datos exactos, o $9760 si no los tenés."
+      }
+    ],
+    "node_metadata": {
+      "blocked_list": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0032
+      },
+      "reformulate": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "6:https://foundry-botii-dev-6.services.ai.azure.com/",
+        "tokens": {
+          "input": 804,
+          "output": 20,
+          "total": 824
+        },
+        "timings": 0.9318
+      },
+      "triage": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "4:https://foundry-boti-dev-4.cognitiveservices.azure.com/",
+        "tokens": {
+          "input": 2447,
+          "output": 36,
+          "total": 2483
+        },
+        "timings": 1.0917
+      },
+      "router": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "9:https://foundry-boti-dev-7.services.ai.azure.com/",
+        "tokens": {
+          "input": 1424,
+          "output": 33,
+          "total": 1457
+        },
+        "timings": 1.5867
+      },
+      "blocked_list_agent": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0007
+      },
+      "agent_call": {
+        "model": null,
+        "temperature": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "breakdown": {
+          "agent_request": 7.0833,
+          "overhead": 0.0003
+        },
+        "timings": 7.0836
+      },
+      "personality": {
+        "model": "gpt-4o",
+        "temperature": 0.2,
+        "endpoint": "5:https://foundry-boti-dev-10.services.ai.azure.com/",
+        "tokens": {
+          "input": 788,
+          "output": 120,
+          "total": 908
+        },
+        "timings": 3.337
+      },
+      "grounding": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "8:https://foundry-boti-dev-8.services.ai.azure.com/",
+        "tokens": {
+          "input": 2307,
+          "output": 45,
+          "total": 2352
+        },
+        "timings": 3.688
+      },
+      "join_triage_router": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0
+      },
+      "agent_tramites": {
+        "retrieve": {
+          "model": null,
+          "temperature": null,
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "total": 0
+          },
+          "timing": 5.2554
+        },
+        "retrieve_embeddings": {
+          "model": "text-embedding-3-large",
+          "endpoint": "2:https://foundry-boti-dev.cognitiveservices.azure.com/",
+          "tokens": {
+            "prompt_tokens": 18,
+            "total_tokens": 18
+          },
+          "timing": 4.9046
+        },
+        "rag_answer": {
+          "model": "gpt-5-chat",
+          "temperature": 0.2,
+          "endpoint": "1:https://foundry-boti-dev-2.cognitiveservices.azure.com/",
+          "tokens": {
+            "input": 2428,
+            "output": 135,
+            "total": 2563
+          },
+          "timing": 1.7739
+        }
+      },
+      "join_personality_grounding": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0047
+      }
+    },
+    "partial_answers": {
+      "blocked_list": {
+        "blocked": false
+      },
+      "reformulate": {
+        "question": "¿Cómo puedo obtener una copia del acta de matrimonio de mis padres?"
+      },
+      "triage": {
+        "task": "question_answering",
+        "reason": "Consulta sobre el trámite para obtener una copia de un acta de matrimonio, lo cual es un procedimiento administrativo del GCBA."
+      },
+      "router": {
+        "route": "tramites",
+        "reason": "La consulta se refiere a la obtención de una copia de un documento oficial, lo cual es un trámite administrativo."
+      },
+      "blocked_list_agent": {
+        "blocked": false
+      },
+      "agent_call": {
+        "selected": "tramites",
+        "tools": [
+          {
+            "type": "index",
+            "index_name": "tramites",
+            "index_url": "https://search-shared-dev.search.windows.net"
+          }
+        ],
+        "prompts": {
+          "answer": {
+            "prompt": "## Role\nYou are a precise assistant that answers strictly from SOURCES.\n\n## Task Goal\nGenerate an answer to QUESTION using only SOURCES.\n\n## Task instructions\n- Use only SOURCES to answer QUESTION. Do not use external sources or invent facts.\n- Output must be a plain string (no leading labels like \"ANSWER:\").\n- Conciseness: The answer must be under 80 words and when possible include lists.\n- Time awareness: If QUESTION references time (e.g., \"hoy\", \"mañana\", \"este fin de semana\"), consider the current datetime: {{$datetime}}. Any recommended action must be scheduled strictly after {{$datetime}}.\n- Do not talk about: politics, government, security/insecurity, robbery, income, poor neighborhoods, ugly neighborhoods, or neighborhoods to avoid.\n- Administrative tasks: provide clear, actionable information. Prioritize the most relevant points. If a link appears in SOURCES, include it (prefer buenosaires.gob.ar over argentina.gob.ar). When summarizing or omitting content for brevity, indicate this to the users and end by asking if they want the full details. Always end by asking if they need anything else.\n- Context awareness: If SOURCES mention contacting Boti, WhatsApp, or using the city's chatbot (11 5050 0147), do not include that in the answer.\n\n## Inputs:\nSOURCES: {{$sources}}\nDATETIME: {{$datetime}}\n\n## Output:\nA single concise string answer that follows all rules above.",
+            "model": "gpt-5-chat",
+            "temperature": 0.2
+          },
+          "personality": {
+            "prompt": null,
+            "model": null,
+            "temperature": null
+          }
+        }
+      },
+      "agent_request": {
+        "ok": true,
+        "status": 200,
+        "data": {
+          "answer": "Podés solicitarla en el Registro Civil de la Ciudad de Buenos Aires mediante el trámite “Solicitud de Partidas” en TAD (Tramitación a Distancia): [http://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-partidas](http://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-partidas). Requisitos: usuario miBA, datos completos de los titulares y fecha aproximada del matrimonio. Costo: $0 o $9760 si no conocés los datos exactos. ¿Querés que te detalle los pasos para hacerlo online?",
+          "context": "TÍTULO:\nSolicitud de copia de Documentación Archivada de Partidas\n\nDESCRIPCIÓN:\nEste es el trámite para solicitar copia de documentación archivada de actas inscriptas en el Registro Civil de la Ciudad de Buenos Aires (Ej: Partidas de Nacimiento, Matrimonio, Defunción, Rectificaciones, Inscripciones Extraña jurisdicción, etc), en los siguientes períodos.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-de-copia-de-documentacion-archivada-de-partidas\n\nORGANISMOS:\nOrganismo Responsable\nDirección General Registro del Estado Civil y Capacidad de las Personas\nUbicación \nUruguay 753\nDías de atención \nLunes a viernes \nHorarios de atención \n7.30 a 19 h\n\nREQUISITOS:\n- • Imagen de la partida.\n\n• DNI vigente.\n\n• Fotocopia de ambos lados.\n\nPASOS:\nINGRESÁ A TAD:\n• Hacé clic en \"Iniciar trámite\".\n\n• Accedé al Sistema de Tramitación a Distancia (TAD) con tu usuario y contraseña miBA.\n\nGENERÁ TU EXPEDIENTE:\n• Seguí las indicaciones de la plataforma.\n\n• Cargá la información solicitada para iniciar tu trámite.\n\nCOSTO:\n- : $6770.00\n\nMÁS INFORMACIÓN:\n- Períodos:\n\n• Nacimientos desde 1959 hasta la actualidad.\n\n• Matrimonios desde 1992 hasta la actualidad.\n\n• Defunciones desde 1913 hasta la actualidad.\n\n• Rectificaciones desde 1913 hasta la actualidad.\n\n- Más Información\n\n• Importante: Se informa que la tasa que se abona por el presente trámite es en concepto de la búsqueda de documentación archivada en nuestros registros, independientemente que la misma arroje resultado positivo o negativo.\n\nMedios de pago:\nPodés pagar la BUI (Boleta Única Inteligente) desde: Pago Fácil, Rapipago, Portal de pago electrónico, Billetera Virtual BUEPP (para más información ingresá a [www.buepp.com.ar](http://www.buepp.com.ar)), MercadoPago o a través de billetera virtual por QR.\n\nPara asesoramiento sobre este trámite, podés acercarte a cualquier Sede Comunal con turno previo. Solicítalo [acá](https://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=7407) o llamá al 147.\nRecordá que si te desuscribiste de los mails del GCBA no podrás recibir el mail de confirmación de citas, por lo que deberás comunicarte con el 147 para indicar un correo alternativo.\n\nSEDES:\n\n---\n\nTÍTULO:\nSolicitud Partidas\n\nDESCRIPCIÓN:\nCon este trámite solo podés solicitar partidas de nacimiento, defunción o matrimonio inscriptas en la Ciudad Autónoma de Buenos Aires.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-partidas\n\nORGANISMOS:\nOrganismo Responsable\nDirección General del Registro del Estado Civil y Capacidad de las Personas\nUbicación \nUruguay 753\nDías de atención \nLunes a viernes \nHorarios de atención \n7.30 a 19 hs.\n\nREQUISITOS:\n- • Contar con usuario y clave miBA.\r\n\nSi tenés alguna duda sobre cómo crear tu cuenta o validar tu identidad, ingresá a Plataforma miBA.\nConocé más sobre los niveles de seguridad de clave miBA.\r\n\n• Si sos titular de la partida y contás con clave miBA nivel 3, podés ver y descargar tus partidas directamente desde la aplicación.\n\n- Requisitos obligatorios:\n\n• Para actas de Nacimiento y Defunción: conocer el nombre y apellido completo del titular de la partida y la fecha aproximada del acontecimiento.\n\n• Para actas de Matrimonio: conocer el nombre y apellido completo de los titulares de la partida.\n\n• En ambos casos: cuantos más datos aportes, más eficiente será la búsqueda.\n\n• Contar con una casilla de correo de Gmail, Hotmail o Yahoo.\n\nPASOS:\nINGRESÁ A TAD:\n• Hacé clic en “Iniciar trámite”.\n\n• Accedé al Sistema de Tramitación a Distancia (TAD) con tu usuario y contraseña miBA.\n\nCOMPLETÁ TU SOLICITUD:\n• Seguí las indicaciones de la plataforma.\n\n• Cargá la información solicitada para iniciar tu trámite.\n\nABONÁ LA BOLETA ÚNICA INTELIGENTE (BUI):\nEn caso de corresponder, aboná la boleta (BUI).\n\nPodés pagar la BUI (Boleta Única Inteligente) desde: Pago Fácil, Rapipago, Portal de pago electrónico, Billetera Virtual BUEPP (para más información ingresá a [www.buepp.com.ar](http://www.buepp.com.ar/)), MercadoPago o a través de billetera virtual por QR.\n\nRECIBÍ TU PARTIDA:\nDespués de que validemos tu información, recibirás un mail indicando que la partida que solicitaste estará disponible en TAD en la sección Mis trámites > Trámites Finalizados.\n\nCOSTO:\n- En caso de no conocer la fecha exacta del acontecimiento, el tomo, acta y sección o circunscripción de la partida.: $9760.00\n\n- Partida regular: $0.00\n\nMÁS INFORMACIÓN:\n- El envío regular es de 15 días hábiles.\nRecordá que si no conocés los datos de la partida (Circunscripción/Sección - Tomo - Acta - Año), este trámite tiene un pago adicional.\n\n- Más Información\nEl trámite es gratis, solo tiene un costo en los casos descriptos.\nApostillado de partidas:\nEl trámite de solicitud de partidas no incluye legalización ni apostillado. Las [legalizaciones y apostillas](https://www.cancilleria.gob.ar/legalizaciones-y-apostillas) se realizan a través del [Ministerio de Relaciones Exteriores, Comercio Internacional y Culto de la Nación](https://www.cancilleria.gob.ar/), incluso estando fuera del territorio argentino.\n\n- Recordá que si te desuscribiste de los mails del GCBA no podrás recibir el mail de confirmación de citas, por lo que deberás comunicarte con el 147 para indicar un correo alternativo.\n\nSEDES:\n\n---\n\nTÍTULO:\nSolicitud Partidas Urgentes\n\nDESCRIPCIÓN:\nCon este trámite sólo podés solicitar partidas de nacimiento, defunción o matrimonio inscriptas en la Ciudad Autónoma de Buenos Aires. El envío urgente es de 3 días hábiles una vez ingresado el pago.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-partidas-urgentes\n\nORGANISMOS:\nOrganismo Responsable\nDirección General del Registro del Estado Civil y Capacidad de las Personas\nUbicación \nUruguay 753\nDías de atención \nLunes a viernes \nHorarios de atención \n7.30 a 19 hs.\n\nREQUISITOS:\n- • Contar con usuario y clave miBA.\r\n\nSi tenés alguna duda sobre cómo crear tu cuenta o validar tu identidad, ingresá a Plataforma miBA.\nConocé más sobre los niveles de seguridad de clave miBA.\r\n\n• Si sos titular de la partida y contás con clave miBA nivel 3, podés ver y descargar tus partidas directamente desde la aplicación.\n\n- Requisitos obligatorios para partidas urgentes:\n\n• Conocer el nombre y apellido del o los titulares de la partida y la fecha exacta del acontecimiento.\n\n• Conocer los datos de Circunscripción/Sección, tomo, acta y año de inscripción.\n\n• Contar con una tarjeta de crédito para realizar el pago del trámite (no es necesario ser el titular de la tarjeta).\n\n• Contar con una casilla de correo de Gmail, Hotmail o Yahoo.\n\nPASOS:\nINGRESÁ A TAD:\n• Hacé clic en \"Iniciar trámite\".\n\n• Accedé al Sistema de Tramitación a Distancia (TAD) con tu usuario y contraseña miBA.\n\nCOMPLETÁ TU SOLICITUD:\n• Seguí las indicaciones de la plataforma.\n\n• Cargá la información solicitada para iniciar tu trámite.\n\nABONÁ LA BOLETA ÚNICA INTELIGENTE (BUI):\nPagá la boleta (BUI) correspondiente al costo del trámite.\n\nPodés pagar la BUI (Boleta Única Inteligente) desde: Pago Fácil, Rapipago, Portal de pago electrónico, Billetera Virtual BUEPP (para más información ingresá a [www.buepp.com.ar](http://www.buepp.com.ar)), MercadoPago o a través de billetera virtual por QR.\n\nRECIBÍ TU PARTIDA:\nUna vez finalizado el trámite, recibirás un mail indicando que la partida que solicitaste estará disponible en TAD en la sección Mis trámites > Trámites finalizados.\n\nCOSTO:\n- Solicitud de Partidas de forma Urgente: $14380.00\n\nMÁS INFORMACIÓN:\n- Más Información\nEl trámite es gratis, solo tiene un costo en caso de desconocimiento de datos.\nApostillado de partidas:\nEl trámite de solicitud de partidas no incluye legalización ni apostillado. Las [legalizaciones y apostillas](https://www.cancilleria.gob.ar/legalizaciones-y-apostillas) se realizan a través del [Ministerio de Relaciones Exteriores, Comercio Internacional y Culto de la Nación](https://www.cancilleria.gob.ar/), incluso estando fuera del territorio argentino.\n\n- Recordá que si te desuscribiste de los mail",
+          "partial_answers": {
+            "retrieve": "TÍTULO:\nSolicitud de copia de Documentación Archivada de Partidas\n\nDESCRIPCIÓN:\nEste es el trámite para solicitar copia de documentación archivada de actas inscriptas en el Registro Civil de la Ciudad de Buenos Aires (Ej: Partidas de Nacimiento, Matrimonio, Defunción, Rectificaciones, Inscripciones Extraña jurisdicción, etc), en los siguientes períodos.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-de-copia-de-documentacion-archivada-de-partidas\n\nORGANISMOS:\nOrganismo Responsable\nDirección General Registro del Estado Civil y Capacidad de las Personas\nUbicación \nUruguay 753\nDías de atención \nLunes a viernes \nHorarios de atención \n7.30 a 19 h\n\nREQUISITOS:\n- • Imagen de la partida.\n\n• DNI vigente.\n\n• Fotocopia de ambos lados.\n\nPASOS:\nINGRESÁ A TAD:\n• Hacé clic en \"Iniciar trámite\".\n\n• Accedé al Sistema de Tramitación a Distancia (TAD) con tu usuario y contraseña miBA.\n\nGENERÁ TU EXPEDIENTE:\n• Seguí las indicaciones de la plataforma.\n\n• Cargá la información solicitada para iniciar tu trámite.\n\nCOSTO:\n- : $6770.00\n\nMÁS INFORMACIÓN:\n- Períodos:\n\n• Nacimientos desde 1959 hasta la actualidad.\n\n• Matrimonios desde 1992 hasta la actualidad.\n\n• Defunciones desde 1913 hasta la actualidad.\n\n• Rectificaciones desde 1913 hasta la actualidad.\n\n- Más Información\n\n• Importante: Se informa que la tasa que se abona por el presente trámite es en concepto de la búsqueda de documentación archivada en nuestros registros, independientemente que la misma arroje resultado positivo o negativo.\n\nMedios de pago:\nPodés pagar la BUI (Boleta Única Inteligente) desde: Pago Fácil, Rapipago, Portal de pago electrónico, Billetera Virtual BUEPP (para más información ingresá a [www.buepp.com.ar](http://www.buepp.com.ar)), MercadoPago o a través de billetera virtual por QR.\n\nPara asesoramiento sobre este trámite, podés acercarte a cualquier Sede Comunal con turno previo. Solicítalo [acá](https://formulario-sigeci.buenosaires.gob.ar/InicioTramite?idPrestacion=7407) o llamá al 147.\nRecordá que si te desuscribiste de los mails del GCBA no podrás recibir el mail de confirmación de citas, por lo que deberás comunicarte con el 147 para indicar un correo alternativo.\n\nSEDES:\n\n---\n\nTÍTULO:\nSolicitud Partidas\n\nDESCRIPCIÓN:\nCon este trámite solo podés solicitar partidas de nacimiento, defunción o matrimonio inscriptas en la Ciudad Autónoma de Buenos Aires.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-partidas\n\nORGANISMOS:\nOrganismo Responsable\nDirección General del Registro del Estado Civil y Capacidad de las Personas\nUbicación \nUruguay 753\nDías de atención \nLunes a viernes \nHorarios de atención \n7.30 a 19 hs.\n\nREQUISITOS:\n- • Contar con usuario y clave miBA.\r\n\nSi tenés alguna duda sobre cómo crear tu cuenta o validar tu identidad, ingresá a Plataforma miBA.\nConocé más sobre los niveles de seguridad de clave miBA.\r\n\n• Si sos titular de la partida y contás con clave miBA nivel 3, podés ver y descargar tus partidas directamente desde la aplicación.\n\n- Requisitos obligatorios:\n\n• Para actas de Nacimiento y Defunción: conocer el nombre y apellido completo del titular de la partida y la fecha aproximada del acontecimiento.\n\n• Para actas de Matrimonio: conocer el nombre y apellido completo de los titulares de la partida.\n\n• En ambos casos: cuantos más datos aportes, más eficiente será la búsqueda.\n\n• Contar con una casilla de correo de Gmail, Hotmail o Yahoo.\n\nPASOS:\nINGRESÁ A TAD:\n• Hacé clic en “Iniciar trámite”.\n\n• Accedé al Sistema de Tramitación a Distancia (TAD) con tu usuario y contraseña miBA.\n\nCOMPLETÁ TU SOLICITUD:\n• Seguí las indicaciones de la plataforma.\n\n• Cargá la información solicitada para iniciar tu trámite.\n\nABONÁ LA BOLETA ÚNICA INTELIGENTE (BUI):\nEn caso de corresponder, aboná la boleta (BUI).\n\nPodés pagar la BUI (Boleta Única Inteligente) desde: Pago Fácil, Rapipago, Portal de pago electrónico, Billetera Virtual BUEPP (para más información ingresá a [www.buepp.com.ar](http://www.buepp.com.ar/)), MercadoPago o a través de billetera virtual por QR.\n\nRECIBÍ TU PARTIDA:\nDespués de que validemos tu información, recibirás un mail indicando que la partida que solicitaste estará disponible en TAD en la sección Mis trámites > Trámites Finalizados.\n\nCOSTO:\n- En caso de no conocer la fecha exacta del acontecimiento, el tomo, acta y sección o circunscripción de la partida.: $9760.00\n\n- Partida regular: $0.00\n\nMÁS INFORMACIÓN:\n- El envío regular es de 15 días hábiles.\nRecordá que si no conocés los datos de la partida (Circunscripción/Sección - Tomo - Acta - Año), este trámite tiene un pago adicional.\n\n- Más Información\nEl trámite es gratis, solo tiene un costo en los casos descriptos.\nApostillado de partidas:\nEl trámite de solicitud de partidas no incluye legalización ni apostillado. Las [legalizaciones y apostillas](https://www.cancilleria.gob.ar/legalizaciones-y-apostillas) se realizan a través del [Ministerio de Relaciones Exteriores, Comercio Internacional y Culto de la Nación](https://www.cancilleria.gob.ar/), incluso estando fuera del territorio argentino.\n\n- Recordá que si te desuscribiste de los mails del GCBA no podrás recibir el mail de confirmación de citas, por lo que deberás comunicarte con el 147 para indicar un correo alternativo.\n\nSEDES:\n\n---\n\nTÍTULO:\nSolicitud Partidas Urgentes\n\nDESCRIPCIÓN:\nCon este trámite sólo podés solicitar partidas de nacimiento, defunción o matrimonio inscriptas en la Ciudad Autónoma de Buenos Aires. El envío urgente es de 3 días hábiles una vez ingresado el pago.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-partidas-urgentes\n\nORGANISMOS:\nOrganismo Responsable\nDirección General del Registro del Estado Civil y Capacidad de las Personas\nUbicación \nUruguay 753\nDías de atención \nLunes a viernes \nHorarios de atención \n7.30 a 19 hs.\n\nREQUISITOS:\n- • Contar con usuario y clave miBA.\r\n\nSi tenés alguna duda sobre cómo crear tu cuenta o validar tu identidad, ingresá a Plataforma miBA.\nConocé más sobre los niveles de seguridad de clave miBA.\r\n\n• Si sos titular de la partida y contás con clave miBA nivel 3, podés ver y descargar tus partidas directamente desde la aplicación.\n\n- Requisitos obligatorios para partidas urgentes:\n\n• Conocer el nombre y apellido del o los titulares de la partida y la fecha exacta del acontecimiento.\n\n• Conocer los datos de Circunscripción/Sección, tomo, acta y año de inscripción.\n\n• Contar con una tarjeta de crédito para realizar el pago del trámite (no es necesario ser el titular de la tarjeta).\n\n• Contar con una casilla de correo de Gmail, Hotmail o Yahoo.\n\nPASOS:\nINGRESÁ A TAD:\n• Hacé clic en \"Iniciar trámite\".\n\n• Accedé al Sistema de Tramitación a Distancia (TAD) con tu usuario y contraseña miBA.\n\nCOMPLETÁ TU SOLICITUD:\n• Seguí las indicaciones de la plataforma.\n\n• Cargá la información solicitada para iniciar tu trámite.\n\nABONÁ LA BOLETA ÚNICA INTELIGENTE (BUI):\nPagá la boleta (BUI) correspondiente al costo del trámite.\n\nPodés pagar la BUI (Boleta Única Inteligente) desde: Pago Fácil, Rapipago, Portal de pago electrónico, Billetera Virtual BUEPP (para más información ingresá a [www.buepp.com.ar](http://www.buepp.com.ar)), MercadoPago o a través de billetera virtual por QR.\n\nRECIBÍ TU PARTIDA:\nUna vez finalizado el trámite, recibirás un mail indicando que la partida que solicitaste estará disponible en TAD en la sección Mis trámites > Trámites finalizados.\n\nCOSTO:\n- Solicitud de Partidas de forma Urgente: $14380.00\n\nMÁS INFORMACIÓN:\n- Más Información\nEl trámite es gratis, solo tiene un costo en caso de desconocimiento de datos.\nApostillado de partidas:\nEl trámite de solicitud de partidas no incluye legalización ni apostillado. Las [legalizaciones y apostillas](https://www.cancilleria.gob.ar/legalizaciones-y-apostillas) se realizan a través del [Ministerio de Relaciones Exteriores, Comercio Internacional y Culto de la Nación](https://www.cancilleria.gob.ar/), incluso estando fuera del territorio argentino.\n\n- Recordá que si te desuscribiste de los mail",
+            "rag_answer": "Podés solicitarla en el Registro Civil de la Ciudad de Buenos Aires mediante el trámite “Solicitud de Partidas” en TAD (Tramitación a Distancia): [http://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-partidas](http://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-partidas). Requisitos: usuario miBA, datos completos de los titulares y fecha aproximada del matrimonio. Costo: $0 o $9760 si no conocés los datos exactos. ¿Querés que te detalle los pasos para hacerlo online?"
+          },
+          "correlation_id": "8531fc0ce46d43c0994c8365c34921b2"
+        }
+      },
+      "personality": "Si querés pedir una partida de matrimonio en la Ciudad, podés hacerlo por el trámite *“Solicitud de Partidas”* en TAD. Acá te dejo el link: https://static.buenosaires.gob.ar/gcaba_historico/tramites/solicitud-partidas 📄\n\nPara hacerlo, *necesitás*:\n🔹 Usuario miBA.\n🔹 Datos completos de los titulares.\n🔹 Fecha aproximada del matrimonio.\n\nEl costo es $0 si tenés los datos exactos, o $9760 si no los tenés.",
+      "grounding": {
+        "is_grounded": true,
+        "reason": "The response is directly based on the provided context, accurately summarizing the information about the 'Solicitud de Partidas' process, including the requirements, costs, and steps."
+      },
+      "join_personality_grounding": {
+        "blocked_final_answer": false
+      }
+    }
+  },
+  {
+    "id": "47ca632e6e484e64a38c4fba9d04e29b",
+    "original_question": "Talleres y escuelas para discapacitados",
+    "question": "Quiero información sobre talleres y escuelas para discapacitados.",
+    "answer": "Acá te dejo la info de las *escuelas deportivas* para personas con discapacidad, de abril a noviembre 2025: \n\n• Parque Patricios: iniciación deportiva y natación 🏊 \n\n• Parque Sarmiento: actividades recreativas y plásticas \n\n• Polideportivo Santojanni: iniciación deportiva y natación \n\n• Campo de Golf de Palermo: escuela de golf ⛳ \n\nInscripción en: https://inscribite.buenosaires.gob.ar/3162_cc575abf-756c-42f0-9815-3f36274e5c13 \n\nPodés ver servicios inclusivos en: https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/buscador_de_accesibilidad",
+    "outcome": {
+      "task": "question_answering",
+      "route": "accesibilidad",
+      "info": "triage: Consulta sobre talleres y escuelas para personas con discapacidad en CABA, relacionado con accesibilidad. | router: Consulta sobre talleres y escuelas para personas con discapacidad en la Ciudad de Buenos Aires.",
+      "failures": []
+    },
+    "response_time": 6.6578,
+    "route_to": "",
+    "correlation_id": "5eb97819-a18e-4064-8e89-37e3219d7cf0",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Talleres y escuelas para discapacitados"
+      },
+      {
+        "role": "assistant",
+        "content": "Acá te dejo la info de las *escuelas deportivas* para personas con discapacidad, de abril a noviembre 2025: \n\n• Parque Patricios: iniciación deportiva y natación 🏊 \n\n• Parque Sarmiento: actividades recreativas y plásticas \n\n• Polideportivo Santojanni: iniciación deportiva y natación \n\n• Campo de Golf de Palermo: escuela de golf ⛳ \n\nInscripción en: https://inscribite.buenosaires.gob.ar/3162_cc575abf-756c-42f0-9815-3f36274e5c13 \n\nPodés ver servicios inclusivos en: https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/buscador_de_accesibilidad"
+      }
+    ],
+    "node_metadata": {
+      "blocked_list": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0024
+      },
+      "reformulate": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "8:https://foundry-boti-dev-8.services.ai.azure.com/",
+        "tokens": {
+          "input": 802,
+          "output": 17,
+          "total": 819
+        },
+        "timings": 0.9714
+      },
+      "triage": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "7:https://foundry-boti-dev-9.services.ai.azure.com/",
+        "tokens": {
+          "input": 2445,
+          "output": 29,
+          "total": 2474
+        },
+        "timings": 1.0416
+      },
+      "router": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "6:https://foundry-botii-dev-6.services.ai.azure.com/",
+        "tokens": {
+          "input": 1422,
+          "output": 27,
+          "total": 1449
+        },
+        "timings": 1.5424
+      },
+      "blocked_list_agent": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0012
+      },
+      "agent_call": {
+        "model": null,
+        "temperature": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "breakdown": {
+          "agent_request": 2.4909,
+          "overhead": 0.0008
+        },
+        "timings": 2.4917
+      },
+      "personality": {
+        "model": "gpt-5-chat",
+        "temperature": 0.2,
+        "endpoint": "2:https://foundry-boti-dev.cognitiveservices.azure.com/",
+        "tokens": {
+          "input": 802,
+          "output": 162,
+          "total": 964
+        },
+        "timings": 1.5423
+      },
+      "grounding": {
+        "model": "gpt-4o",
+        "temperature": 0.0,
+        "endpoint": "0:https://foundry-boti-dev-3.cognitiveservices.azure.com/",
+        "tokens": {
+          "input": 2319,
+          "output": 29,
+          "total": 2348
+        },
+        "timings": 1.5034
+      },
+      "join_triage_router": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0
+      },
+      "agent_accesibilidad": {
+        "retrieve": {
+          "model": null,
+          "temperature": null,
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "total": 0
+          },
+          "timing": 0.405
+        },
+        "retrieve_embeddings": {
+          "model": "text-embedding-3-large",
+          "endpoint": "3:https://foundry-boti-dev-5.cognitiveservices.azure.com/",
+          "tokens": {
+            "prompt_tokens": 17,
+            "total_tokens": 17
+          },
+          "timing": 0.0875
+        },
+        "rag_answer": {
+          "model": "gpt-5-chat",
+          "temperature": 0.2,
+          "endpoint": "0:https://foundry-boti-dev-3.cognitiveservices.azure.com/",
+          "tokens": {
+            "input": 2352,
+            "output": 221,
+            "total": 2573
+          },
+          "timing": 2.0141
+        }
+      },
+      "join_personality_grounding": {
+        "model": null,
+        "temperature": null,
+        "endpoint": null,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "total": 0
+        },
+        "timings": 0.0071
+      }
+    },
+    "partial_answers": {
+      "blocked_list": {
+        "blocked": false
+      },
+      "reformulate": {
+        "question": "Quiero información sobre talleres y escuelas para discapacitados."
+      },
+      "triage": {
+        "task": "question_answering",
+        "reason": "Consulta sobre talleres y escuelas para personas con discapacidad en CABA, relacionado con accesibilidad."
+      },
+      "router": {
+        "route": "accesibilidad",
+        "reason": "Consulta sobre talleres y escuelas para personas con discapacidad en la Ciudad de Buenos Aires."
+      },
+      "blocked_list_agent": {
+        "blocked": false
+      },
+      "agent_call": {
+        "selected": "accesibilidad",
+        "tools": [
+          {
+            "type": "index",
+            "index_name": "accesibilidad",
+            "index_url": "https://search-shared-dev.search.windows.net"
+          }
+        ],
+        "prompts": {
+          "answer": {
+            "prompt": "## Role\nYou are a precise assistant that answers strictly from SOURCES.\n\n## Task Goal\nGenerate an answer to QUESTION using only SOURCES.\n\n## Task instructions\n- Use only SOURCES to answer QUESTION. Do not use external sources or invent facts.\n- Output must be a plain string (no leading labels like \"ANSWER:\").\n- Conciseness: The answer must be under 80 words and when possible include lists.\n- Time awareness: If QUESTION references time (e.g., \"hoy\", \"mañana\", \"este fin de semana\"), consider the current datetime: {{$datetime}}. Any recommended action must be scheduled strictly after {{$datetime}}.\n- Do not talk about: politics, government, security/insecurity, robbery, income, poor neighborhoods, ugly neighborhoods, or neighborhoods to avoid.\n- Administrative tasks: provide clear, actionable information. Prioritize the most relevant points. If a link appears in SOURCES, include it (prefer buenosaires.gob.ar over argentina.gob.ar). When summarizing or omitting content for brevity, indicate this to the users and end by asking if they want the full details. Always end by asking if they need anything else.\n- Context awareness: If SOURCES mention contacting Boti, WhatsApp, or using the city's chatbot (11 5050 0147), do not include that in the answer.\n\n## Inputs:\nSOURCES: {{$sources}}\nDATETIME: {{$datetime}}\n\n## Output:\nA single concise string answer that follows all rules above.",
+            "model": "gpt-5-chat",
+            "temperature": 0.2
+          },
+          "personality": {
+            "prompt": "## Bot description You act as an expert in communication accessibility. Your job is to transform any text into a clear, simple, and accessible version. You follow the principles of Easy Reading and Plain Language. Your goal is to make the content understandable for everyone, no matter their literacy level, age, cognitive disability, or experience with the topic. You optimize for very short and easy-to-read messages, especially for platforms like WhatsApp. You apply these rules: Plain Language: - Use common, everyday words. - Short sentences (one idea per sentence). - Logical order of information. - Avoid jargon, technical terms, and abbreviations. If you can’t avoid them, explain them clearly. - Use active voice. - Avoid double negatives. Easy Reading: - Use very short and direct phrases. - Use daily vocabulary. Repeat if needed. - Explain complex ideas with examples if necessary. - Use a personal, friendly tone (first person). - Give info in steps or bullet points whenever possible. - Help people understand names or dates with context. - Use predictable structures and simple grammar. - Prioritize clarity and relevance over completeness. ## Task Goal You are a master of linguistic transformation. Your task is to take the OUTPUT and completely reframe it using the Bot description above, so it can be easily understood by everyone, including people with cognitive disabilities. ## Task instructions - The output should be in string format without including the word \"ANSWER\". - Language Consistency: Always respond in Spanish using voseo rioplatense accent and wording. Do not use any other language. - Tone and Style: Use a casual, friendly tone. Simple and clear. Avoid exclamative and imperative tones. Don’t use \"che\". - Length: The message must be under 100 words. - Grammar: Use casual verb forms. Prefer periphrastic future tense (\"vas a poder\", \"voy a dejarte\") and voseo conjugations. - Bold: Use bolds to emphasize only the key points in the text. Maximum two bold words per paragraph. - Lists: - Must contain at least 2 items. - Every item must be in its own line and with an empty line between items. - Use the standard bullet point (•) before each item. - If its a sequence use numbers (1., 2., ...). - Emojis: - Add a relevant emoji at the end of some paragraphs (max 1 per block). - Personal Touch: Always write in first person singular. For example: \"acá te dejo la info\", \"vas a necesitar\". - Links: Use plain text URLs, starting with https://. No markdown or HTML. - Boti Reference: If the original text says to contact Boti or the city's chatbot, adapt it to first person (\"yo puedo ayudarte\") or omit it if redundant.",
+            "model": "gpt-5-chat",
+            "temperature": 0.2
+          }
+        }
+      },
+      "agent_request": {
+        "ok": true,
+        "status": 200,
+        "data": {
+          "answer": "Podés acceder a las **Escuelas Deportivas para Personas con Discapacidad** (abril–noviembre 2025) en:  \n- Parque Patricios: iniciación deportiva y natación.  \n- Parque Sarmiento: actividades recreativas y plásticas.  \n- Polideportivo Santojanni: iniciación deportiva y natación.  \n- Campo de Golf de Palermo: escuela de golf.  \nInscripción: [https://inscribite.buenosaires.gob.ar/3162_cc575abf-756c-42f0-9815-3f36274e5c13](https://inscribite.buenosaires.gob.ar/3162_cc575abf-756c-42f0-9815-3f36274e5c13).  \nTambién podés buscar servicios inclusivos en el [Mapa Colaborativo BA](https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/buscador_de_accesibilidad).  \n¿Querés que te detalle los requisitos de inscripción?",
+          "context": "TÍTULO:\nEscuelas deportivas para personas con discapacidad\n\nRESUMEN:\nLas escuelas deportivas brindan a niños/as, jóvenes y adultos, distintas propuestas que les permiten disfrutar de la actividad física y deportiva, además de representar un espacio de inserción social.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/deportes/escuelas-deportivas-para-personas-con-discapacidad-0\n\nDESCRIPCIÓN:\nSe desarrollan los días martes y jueves de 14 a 17 horas (Sarmiento), de 15 a 18 horas (Patricios y Santojanni) y sábados de 11 a 13hs en el Campo de Golf de\r\nPalermo, desde el 8 de abril al 27 de noviembre de 2025.\nQuienes concurran deberán elegir la sede de acuerdo al tipo de actividad.\nDeberán tener 6 años en adelante, control de esfínteres, poder sostenerse en la actividad y accesibilidad independiente en natatorios.\n● Parque Patricios (https://mapa.buenosaires.gob.ar/comollego/?lat=-34.639112&lng=-58.408915&zl=15&modo=transporte&dir=Pepiri+135), se desarrollan clases de iniciación deportiva y natación (grupales).\n● Parque Sarmiento (https://mapa.buenosaires.gob.ar/comollego/?lat=-34.558173&lng=-58.499665&zl=15&modo=transporte&dir=Parque+Presidente+Sarmiento), se desarrollan actividades: recreativas, desarrollo cognitivo, plásticas y estético expresivas.\n● Polideportivo Santojanni (https://mapa.buenosaires.gob.ar/comollego/?lat=-34.646593&lng=-58.513606&zl=15&modo=transporte&dir=Patron+6222), se desarrollan clases de iniciación deportiva y natación, grupales.\n● Campo de Golf de Palermo (https://mapa.buenosaires.gob.ar/comollego/?lat=-34.560885&lng=-58.431186&zl=15&modo=transporte&dir=ASOCIACION+CIVIL+SIN+FINES+DE+LUCRO+GOLF+CLUB+LAGOS+DE+PALERMO), se desarrollan actividades de Escuela de Golf.\nPara inscribirte, deberá completar el formulario online de preinscripción, y adjuntar apto médico vigente y documentación original solicitada, como requisito obligatorio, fotografiarla o escanearla y subirla en el link de inscripción.\nRequisitos para confirmar la inscripción:\n● Apto médico con fecha de vigencia de un año\n● Dni frente y dorso colono\n● Dni frente y dorso padre/ madre/ representante legal\n● CUD (certificado único de discapacidad - Opcional)\n\nÁREA:\n- (sin información)\n\nCONTENIDO:\n- INSCRIPCION A LAS ESCUELAS DEPORTIVAS - https://inscribite.buenosaires.gob.ar/3162_cc575abf-756c-42f0-9815-3f36274e5c13\n\n---\n\nTÍTULO:\nEducación Especial\n\nRESUMEN:\nLa Educación Especial, abriéndonos a la posibilidad de pensarla como perspectiva orientada a crear condiciones de enseñanza y aprendizaje en favor de la inclusión educativa, es la modalidad del sistema educativo destinada a asegurar el derecho al acceso a la educación que tiene todo/a niño/a, adolescente y joven con discapacidad temporal o permanente, y de esta manera, fomentar la inclusión educativa a través de acciones de políticas universales.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/educacion-especial\n\nDESCRIPCIÓN:\nEl diseño de configuraciones de apoyo y estrategias pedagógicas a través de Configuraciones de Apoyo, son dispositivos que asegurarán las condiciones de equidad, favoreciendo una propuesta pedagógica que les permita el máximo desarrollo de sus posibilidades, y el pleno ejercicio de sus derechos.\nOferta Educativa\nEscalafón A (/educacion/estudiantes/sistema-educativo/oferta-educativa/escalafon)\nEscuelas hospitalarias\r\nGarantizan la escolaridad educativa a niños/as y jóvenes de todos los niveles que se encuentran internados de manera transitoria o permanente.\nEscuelas domiciliarias\r\nGarantizan la escolaridad educativa en domicilios en todos los niveles a niños/as y jóvenes que, por razones de salud, se encuentran imposibilitados a acceder a los establecimientos educativos de forma temporal o permanente.\nEscalafón B (/educacion/estudiantes/sistema-educativo/oferta-educativa/escalafon-b)\nEscuelas Integrales Interdisciplinarias (EII)\r\nEstán dirigidas a niños/as con edades comprendidas entre los 6 y los 14 años que presentan dificultades en el proceso de aprendizaje y requieren de flexibilidad en la enseñanza.\nCentros Educativos Interdisciplinarios (CEI)\r\nCoordinan a maestros/as de apoyo pedagógico que brindan atención en escuelas comunes de Nivel Inicial, Primario y Secundario que se encuentran en los distritos escolares 7.°, 11.°, 13.°, 15.° y 19.°.\nCentros Educativos para Niños con Tiempos y Espacios Singulares (CENTES)\r\nLos Centros Educativos para la Atención de Niños con Tiempos y Espacios Singulares (CENTES) brindan atención educativa a niños/as, con problemáticas emocionales severas que requieren la elaboración de un dispositivo especial para la construcción de los aprendizajes y para su socialización.\nEscalafón C (/educacion/estudiantes/sistema-educativo/oferta-educativa/escalafon-c)\nEscuelas de Educación Especial:\r\nLas escuelas de educación especial garantizan la educación en todos los niveles para niños/as y jóvenes con discapacidades.\nDispositivos para la inclusión\n\n• Maestro/a de apoyo pedagógico\n\n• Maestro/a de apoyo a la integración (MAI)\n\n• Maestro/a de apoyo psicológico (MAP)\n\n• Maestro/a psicólogo/a orientador/a (MAO)\n\n• Asistente celador para alumnos/as con discapacidad motora (ACDM)\n\n• Intérprete de Lengua de Señas de Argentina (ILSA)\n\nÁREA:\n- (sin información)\n\nCONTENIDO:\n\n---\n\nTÍTULO:\nMapa Colaborativo BA\n\nRESUMEN:\nDescubrí recursos y servicios accesibles cerca tuyo para personas con discapacidad, con información clara y actualizada.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/vicejefatura/ba-discapacidad/mapa-colaborativo-ba\n\nDESCRIPCIÓN:\n\n\nÁREA:\n- (sin información)\n\nCONTENIDO:\n- El Mapa Colaborativo BA es una herramienta digital para encontrar recursos, instituciones y servicios inclusivos en la Ciudad de Buenos Aires. Podés buscar información personalizada según tu ubicación, tus necesidades o de distintas deficiencias.\nEn la Ciudad trabajamos para derribar barreras y promover la inclusión. Por eso desarrollamos este mapa, que conecta a las personas con discapacidad y sus familias con los recursos que necesitan. Desde centros de rehabilitación hasta espacios recreativos, educativos o de salud, vas a encontrar opciones accesibles cerca de vos.\n- Incorporá los mapas a tu Google Maps\n- ¿Qué información vas a encontrar en cada mapa?\n¿Qué información vas a encontrar?\nEl Mapa Colaborativo BA está compuesto por seis mapas temáticos, organizados por distintas deficiencias (motora, mental o intelectual, visual, visceral y auditiva) y un nuevo Mapa Buscador, que permite filtrar resultados según múltiples criterios:\n\n• \nTipo de discapacidad: auditiva, mental o intelectual, motora, visceral o visual.\n\n• \nTipo de prestación: actividades recreativas, centros educativos, de día o de salud, formación laboral, hogares, orientación y promoción de derechos, trámites, entre otros.\n\n• \nUbicación: por barrio o comuna.\n\nTodos los mapas comparten la misma estructura de categorías, lo que te permite navegar con facilidad y encontrar la información que necesitás.\n- ¿Cómo usar el Mapa Colaborativo?\n\nElegí el mapa que querés ver.\n\nUsá el buscador para escribir una dirección o tema.\n\nAcercá o alejá el mapa para ver más detalles.\n\nHacé clic en los íconos para leer más información sobre cada lugar.\n- \n- Abrí el mapa buscador - https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/buscador_de_accesibilidad\n- Además del Mapa Buscador, te ofrecemos cinco mapas organizados según deficiencia: motora, mental o intelectual, visual, visceral y auditiva.\n\nCada uno reúne servicios, instituciones y prestaciones accesibles, para que puedas encontrar lo que necesitás de manera rápida y sencilla.\n- \n- Navega el mapa acá - https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/accesibilidad_mental_intelectual\n- \n- Navega el mapa acá - https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/accesibilidad_motora\n- \n- navega el mapa acá - https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/accesibilidad_visceral\n- \n- Navega el mapa acá - https://epok.buenosaires.gob.ar/mapas",
+          "partial_answers": {
+            "retrieve": "TÍTULO:\nEscuelas deportivas para personas con discapacidad\n\nRESUMEN:\nLas escuelas deportivas brindan a niños/as, jóvenes y adultos, distintas propuestas que les permiten disfrutar de la actividad física y deportiva, además de representar un espacio de inserción social.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/deportes/escuelas-deportivas-para-personas-con-discapacidad-0\n\nDESCRIPCIÓN:\nSe desarrollan los días martes y jueves de 14 a 17 horas (Sarmiento), de 15 a 18 horas (Patricios y Santojanni) y sábados de 11 a 13hs en el Campo de Golf de\r\nPalermo, desde el 8 de abril al 27 de noviembre de 2025.\nQuienes concurran deberán elegir la sede de acuerdo al tipo de actividad.\nDeberán tener 6 años en adelante, control de esfínteres, poder sostenerse en la actividad y accesibilidad independiente en natatorios.\n● Parque Patricios (https://mapa.buenosaires.gob.ar/comollego/?lat=-34.639112&lng=-58.408915&zl=15&modo=transporte&dir=Pepiri+135), se desarrollan clases de iniciación deportiva y natación (grupales).\n● Parque Sarmiento (https://mapa.buenosaires.gob.ar/comollego/?lat=-34.558173&lng=-58.499665&zl=15&modo=transporte&dir=Parque+Presidente+Sarmiento), se desarrollan actividades: recreativas, desarrollo cognitivo, plásticas y estético expresivas.\n● Polideportivo Santojanni (https://mapa.buenosaires.gob.ar/comollego/?lat=-34.646593&lng=-58.513606&zl=15&modo=transporte&dir=Patron+6222), se desarrollan clases de iniciación deportiva y natación, grupales.\n● Campo de Golf de Palermo (https://mapa.buenosaires.gob.ar/comollego/?lat=-34.560885&lng=-58.431186&zl=15&modo=transporte&dir=ASOCIACION+CIVIL+SIN+FINES+DE+LUCRO+GOLF+CLUB+LAGOS+DE+PALERMO), se desarrollan actividades de Escuela de Golf.\nPara inscribirte, deberá completar el formulario online de preinscripción, y adjuntar apto médico vigente y documentación original solicitada, como requisito obligatorio, fotografiarla o escanearla y subirla en el link de inscripción.\nRequisitos para confirmar la inscripción:\n● Apto médico con fecha de vigencia de un año\n● Dni frente y dorso colono\n● Dni frente y dorso padre/ madre/ representante legal\n● CUD (certificado único de discapacidad - Opcional)\n\nÁREA:\n- (sin información)\n\nCONTENIDO:\n- INSCRIPCION A LAS ESCUELAS DEPORTIVAS - https://inscribite.buenosaires.gob.ar/3162_cc575abf-756c-42f0-9815-3f36274e5c13\n\n---\n\nTÍTULO:\nEducación Especial\n\nRESUMEN:\nLa Educación Especial, abriéndonos a la posibilidad de pensarla como perspectiva orientada a crear condiciones de enseñanza y aprendizaje en favor de la inclusión educativa, es la modalidad del sistema educativo destinada a asegurar el derecho al acceso a la educación que tiene todo/a niño/a, adolescente y joven con discapacidad temporal o permanente, y de esta manera, fomentar la inclusión educativa a través de acciones de políticas universales.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/educacion-especial\n\nDESCRIPCIÓN:\nEl diseño de configuraciones de apoyo y estrategias pedagógicas a través de Configuraciones de Apoyo, son dispositivos que asegurarán las condiciones de equidad, favoreciendo una propuesta pedagógica que les permita el máximo desarrollo de sus posibilidades, y el pleno ejercicio de sus derechos.\nOferta Educativa\nEscalafón A (/educacion/estudiantes/sistema-educativo/oferta-educativa/escalafon)\nEscuelas hospitalarias\r\nGarantizan la escolaridad educativa a niños/as y jóvenes de todos los niveles que se encuentran internados de manera transitoria o permanente.\nEscuelas domiciliarias\r\nGarantizan la escolaridad educativa en domicilios en todos los niveles a niños/as y jóvenes que, por razones de salud, se encuentran imposibilitados a acceder a los establecimientos educativos de forma temporal o permanente.\nEscalafón B (/educacion/estudiantes/sistema-educativo/oferta-educativa/escalafon-b)\nEscuelas Integrales Interdisciplinarias (EII)\r\nEstán dirigidas a niños/as con edades comprendidas entre los 6 y los 14 años que presentan dificultades en el proceso de aprendizaje y requieren de flexibilidad en la enseñanza.\nCentros Educativos Interdisciplinarios (CEI)\r\nCoordinan a maestros/as de apoyo pedagógico que brindan atención en escuelas comunes de Nivel Inicial, Primario y Secundario que se encuentran en los distritos escolares 7.°, 11.°, 13.°, 15.° y 19.°.\nCentros Educativos para Niños con Tiempos y Espacios Singulares (CENTES)\r\nLos Centros Educativos para la Atención de Niños con Tiempos y Espacios Singulares (CENTES) brindan atención educativa a niños/as, con problemáticas emocionales severas que requieren la elaboración de un dispositivo especial para la construcción de los aprendizajes y para su socialización.\nEscalafón C (/educacion/estudiantes/sistema-educativo/oferta-educativa/escalafon-c)\nEscuelas de Educación Especial:\r\nLas escuelas de educación especial garantizan la educación en todos los niveles para niños/as y jóvenes con discapacidades.\nDispositivos para la inclusión\n\n• Maestro/a de apoyo pedagógico\n\n• Maestro/a de apoyo a la integración (MAI)\n\n• Maestro/a de apoyo psicológico (MAP)\n\n• Maestro/a psicólogo/a orientador/a (MAO)\n\n• Asistente celador para alumnos/as con discapacidad motora (ACDM)\n\n• Intérprete de Lengua de Señas de Argentina (ILSA)\n\nÁREA:\n- (sin información)\n\nCONTENIDO:\n\n---\n\nTÍTULO:\nMapa Colaborativo BA\n\nRESUMEN:\nDescubrí recursos y servicios accesibles cerca tuyo para personas con discapacidad, con información clara y actualizada.\n\nURL:\nhttp://static.buenosaires.gob.ar/gcaba_historico/vicejefatura/ba-discapacidad/mapa-colaborativo-ba\n\nDESCRIPCIÓN:\n\n\nÁREA:\n- (sin información)\n\nCONTENIDO:\n- El Mapa Colaborativo BA es una herramienta digital para encontrar recursos, instituciones y servicios inclusivos en la Ciudad de Buenos Aires. Podés buscar información personalizada según tu ubicación, tus necesidades o de distintas deficiencias.\nEn la Ciudad trabajamos para derribar barreras y promover la inclusión. Por eso desarrollamos este mapa, que conecta a las personas con discapacidad y sus familias con los recursos que necesitan. Desde centros de rehabilitación hasta espacios recreativos, educativos o de salud, vas a encontrar opciones accesibles cerca de vos.\n- Incorporá los mapas a tu Google Maps\n- ¿Qué información vas a encontrar en cada mapa?\n¿Qué información vas a encontrar?\nEl Mapa Colaborativo BA está compuesto por seis mapas temáticos, organizados por distintas deficiencias (motora, mental o intelectual, visual, visceral y auditiva) y un nuevo Mapa Buscador, que permite filtrar resultados según múltiples criterios:\n\n• \nTipo de discapacidad: auditiva, mental o intelectual, motora, visceral o visual.\n\n• \nTipo de prestación: actividades recreativas, centros educativos, de día o de salud, formación laboral, hogares, orientación y promoción de derechos, trámites, entre otros.\n\n• \nUbicación: por barrio o comuna.\n\nTodos los mapas comparten la misma estructura de categorías, lo que te permite navegar con facilidad y encontrar la información que necesitás.\n- ¿Cómo usar el Mapa Colaborativo?\n\nElegí el mapa que querés ver.\n\nUsá el buscador para escribir una dirección o tema.\n\nAcercá o alejá el mapa para ver más detalles.\n\nHacé clic en los íconos para leer más información sobre cada lugar.\n- \n- Abrí el mapa buscador - https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/buscador_de_accesibilidad\n- Además del Mapa Buscador, te ofrecemos cinco mapas organizados según deficiencia: motora, mental o intelectual, visual, visceral y auditiva.\n\nCada uno reúne servicios, instituciones y prestaciones accesibles, para que puedas encontrar lo que necesitás de manera rápida y sencilla.\n- \n- Navega el mapa acá - https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/accesibilidad_mental_intelectual\n- \n- Navega el mapa acá - https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/accesibilidad_motora\n- \n- navega el mapa acá - https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/accesibilidad_visceral\n- \n- Navega el mapa acá - https://epok.buenosaires.gob.ar/mapas",
+            "rag_answer": "Podés acceder a las **Escuelas Deportivas para Personas con Discapacidad** (abril–noviembre 2025) en:  \n- Parque Patricios: iniciación deportiva y natación.  \n- Parque Sarmiento: actividades recreativas y plásticas.  \n- Polideportivo Santojanni: iniciación deportiva y natación.  \n- Campo de Golf de Palermo: escuela de golf.  \nInscripción: [https://inscribite.buenosaires.gob.ar/3162_cc575abf-756c-42f0-9815-3f36274e5c13](https://inscribite.buenosaires.gob.ar/3162_cc575abf-756c-42f0-9815-3f36274e5c13).  \nTambién podés buscar servicios inclusivos en el [Mapa Colaborativo BA](https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/buscador_de_accesibilidad).  \n¿Querés que te detalle los requisitos de inscripción?"
+          },
+          "correlation_id": "eeadcc83243a42149a676741583e707b"
+        }
+      },
+      "personality": "Acá te dejo la info de las *escuelas deportivas* para personas con discapacidad, de abril a noviembre 2025: \n\n• Parque Patricios: iniciación deportiva y natación 🏊 \n\n• Parque Sarmiento: actividades recreativas y plásticas \n\n• Polideportivo Santojanni: iniciación deportiva y natación \n\n• Campo de Golf de Palermo: escuela de golf ⛳ \n\nInscripción en: https://inscribite.buenosaires.gob.ar/3162_cc575abf-756c-42f0-9815-3f36274e5c13 \n\nPodés ver servicios inclusivos en: https://epok.buenosaires.gob.ar/mapasadmin/mapa_embebido/buscador_de_accesibilidad",
+      "grounding": {
+        "is_grounded": true,
+        "reason": "The response is directly based on the provided context, summarizing and referencing the information accurately."
+      },
+      "join_personality_grounding": {
+        "blocked_final_answer": false
+      }
+    }
+  }
+]

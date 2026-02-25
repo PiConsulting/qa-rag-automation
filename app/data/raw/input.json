@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "user_input": "hola \ncomo andas                wW",
+    "reference": "Yo bie\rn y vos?"
+  },
+  {
+    "id": 2,
+    "user_input": "       cha\ru che nos     v\nemos     ",
+    "reference": "                  Adios que tengas buen día                "
+  },
+  {
+    "id": 3,
+    "user_input": "quier\to retr   uco",
+    "reference": "qui   ero v      ale cuatro",
+    "edad": 4
+  }
+]

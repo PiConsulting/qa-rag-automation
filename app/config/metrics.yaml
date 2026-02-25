@@ -1,0 +1,6 @@
+metrics:
+  - ContextRecall
+  - ContextPrecision
+  - Faithfulness
+  - AnswerRelevancy
+  - SemanticSimilarity
