@@ -16,7 +16,7 @@ def build_single_turn_sample(sample: dict,
   user_input = sample.get(column_mapping['user_input'])
   reference = sample.get(column_mapping['reference'])
   response = sample.get(column_mapping['response'])
-  retrieved_contexts = sample.get(column_mapping['retrieved_contexts'])
+  retrieved_contexts = sample.get(column_mapping['retrieved_contexts'], [])
   
   ## PARCHE PARA CABA
   if isinstance(retrieved_contexts, str):
