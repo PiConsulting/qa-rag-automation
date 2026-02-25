@@ -2,7 +2,7 @@
 .gitignore
 .env
 
-data/processed/*
-data/raw/*
+app/data/processed/*
+app/data/raw/*
 !data/processed/.gitkeep
 !data/raw/.gitkeep
